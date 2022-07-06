@@ -78,6 +78,7 @@ export default defineComponent({
     background:#faf0ca;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .panel li {
     margin: 8px 0;
