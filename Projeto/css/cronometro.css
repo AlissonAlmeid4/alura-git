@@ -11,13 +11,14 @@
     color: rgb(255, 255, 255);
 }
  #cronometro{
+    margin-top: 10px;
     font-family: sans-serif;
     color: #fff;
     display: inline-block;
-    text-align: center;
     font-size: 30px;
 }
 #cronometro > div{
+    text-align: center;
     padding: 10px;
     border-radius: 3px;
     background: rgba(0, 192, 150,0.8);
@@ -39,4 +40,35 @@
     margin-top: 15px;
     background: rgba(255, 0, 0,0.7);
     padding: 5px;
+    display: flex;
+    float: right;
+}
+
+@media screen and (max-width: 1070px)  {
+
+      .mensagemCronometro {
+          display: inline-block;
+          font-size: 18px;
+          width: 300px;
+      }
+       #cronometro{
+          margin-top: 10px;
+          font-family: sans-serif;
+          color: #fff;
+          display: inline-block;
+          font-size: 30px;
+      }
+      #cronometro > div{
+        text-align: center;
+          padding: 8px;
+          display: inline-block;
+          width: auto;
+      }
+      .msgECronometro{
+          width: 97%;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 15px;
+      }
+
 }
