@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cibo & Giola</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="barramenu">
+        <div class="logo">
+            <img src="Imgs/LogoG&C.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <a href="inicio.html"><li class="item">Início</li></a>
+            <a href="galeria.html" style="background-color: rgba(175, 206, 172, 0.842);"><li class="item">Galeria</li></a>
+            <a href="produtos.html"><li class="item">Produtos</li></a>
+            <a href="faleConosco.html"><li class="item">Contato</li></a>
+            <li class="item"><button type="button" class="btnlogin" onclick="login()">Login</button></li>
+        </ul>
+        <div class="burger">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        </nav>
+
+<div class="imggrande" id="imagens">
+    <img src="imgs/tipo1.jpg" id="imgG1">
+    <img src="imgs/bruschetta.jpg" id="img2G">
+    <img src="imgs/risoto.jpg" id="img3G">
+    <img src="imgs/pizza.jpg" id="img4G">
+</div>
+<div class="anuncios">
+<div class="anuncio">
+    <div class="parteinterna">
+        <img src="imgs/tipo1.jpg" alt="#imgG1" id="imgmenor">
+    </div>
+    <div class="descricao">
+        <h3>Macarrão</h3>
+        <p>
+            O macarrão pode não ter surgido na Itália, mas com certeza, os italianos que aperfeiçoaram essa deliciosa massa com molhos impecáveis. O mais famoso deles, inclusive aqui no Brasil, é o molho à bolonhesa, que surgiu – como o nome já indica – na cidade de Bolonha.
+
+            A receita original se caracteriza por um molho à base de carne, ao qual são adicionados cenouras, cebola, aipo e uma pequena quantidade de tomate. Em muitos países fora da Itália, o nome “molho à bolonhesa” é usado para se referir a um molho à base de tomate, que lembra menos o original, parecendo mais o “molho napolitano”, típico do sul da Itália.        </p>
+        </div>
+</div>
+
+<div class="anuncio2">
+    <div class="descricao2">
+        <h3>Bruschetta</h3>
+        <p>
+            Pão, tomate, queijo parmesão e manjericão. Éé tudo o que você precisa para fazer essa deliciosa entrada que surgiu antes de Cristo, entre os trabalhadores rurais italianos. O prato foi a solução encontrada para aproveitar as sobras de pão do dia anterior, misturando com ingredientes simples. 
+
+            Dependendo da região da Itália, o pão usado é diferente. Na Puglia e na Campania, por exemplo, são feitas com um pão crocante chamado “frisella” . Já na Calábria, Sicília e Basilicata, a bruschetta é feita com um pão comprido de semolina e sementes de gergelim.
+        </div>
+    <div class="parteinterna2">
+        <img src="imgs/bruschetta.jpg" alt="#img2G">
+    </div>
+    
+</div>
+
+<div class="anuncio">
+    <div class="parteinterna">
+        <img src="imgs/risoto.jpg" alt="#img3G">
+    </div>
+    <div class="descricao">
+        <h3>Risoto</h3>
+        <p>
+            O risoto é um prato originário da região da Lombardia que surgiu no século XI. No sentido literal significa “pequeno arroz”. Com o passar do tempo a receita foi se popularizando em todo o país.
+
+Existem várias teorias sobre como o risoto foi criado, porém todas envolvem o artista Valerius de Flanders, mestre na fabricação de vidro e responsável pelos vitrais da catedral de Milão. Uma das hipóteses diz que o artista usava o açafrão para criar uma pigmentação amarelada na confecção dos vitrais e que, sem querer, deixou cair um pouco do pigmento em sua comida. 
+        </p>
+            
+        </div>
+</div>
+
+<div class="anuncio2">
+    <div class="descricao2">
+        <h3>Pizza</h3>
+        <p>
+            A origem da pizza é disputada por egípcios, hebreus e outros povos, mas uma coisa ninguém contesta: a versão italiana, especialmente a da cidade de Nápoles, é a mais perfeita! Foi nessa região que foram desenvolvidos os melhores sabores e técnicas de preparo. A pizza napolitana também é conhecida como margherita. Isso porque em 1889, quando a rainha da Itália Margherita de Savoia visitou a cidade, o pizzaiolo Raffaele Esposito criou uma pizza em homenagem a ela. Ele  usou três ingredientes simples, mas que representavam as cores da bandeira da Itália: tomate, muçarela e manjericão.
+        </p>
+        </div>
+    <div class="parteinterna2">
+        <img src="imgs/pizza.jpg" alt="#img4G">
+    </div>
+    
+</div>
+</div>
+<div id="fundologin">
+    <div>
+       <img src="../CiboGiola/Imgs/x.png" class="x" onclick="login()">
+    </div>
+
+   <div class="container">
+       <div class="input">
+           <div class="logoLogin">
+               <img src="./Imgs/LogoG&C.png">
+           </div>
+               <h4>LOGIN</h4>
+           <p>
+               <input type="text" name="Login" id="Login" placeholder="Email">
+          <p>
+       </p>
+            <input type="password" name="Senha" id="Senha" placeholder="Senha">
+           </p>
+           <button type="button" class="btnesqueci" onclick="esquecisenha()">Esqueci minha senha</button>
+           <p>
+               <button type="button" class="btentrar" onclick="entrar()">Entrar</a></button>
+           <button type="button" class="btncadastrar" onclick="cadastrar()" >Cadastre-se</button>
+           </p>
+       </div>
+       </div>
+</div> 
+<script src="src/pages.js"></script>
+<script>
+    $('#fundologin').fadeOut(0);
+    $('.imggrande>img').fadeOut(0);
+</script>
+</body>
+</html>

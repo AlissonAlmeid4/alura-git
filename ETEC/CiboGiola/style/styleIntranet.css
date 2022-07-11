@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("../Imgs/fundoMacarrao.jpg");
+    background-repeat: no-repeat;    
+    background-size: 100vw 100vh;
+    background-position: top;
+    background-attachment: fixed;
+}
+.barramenu{
+    background-color: rgba(175, 206, 172, 0.911);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h2 {
+    margin: 15px;
+}
+p{
+    margin-top: 23px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: large;  
+}
+.listaIngrediente{
+    margin-top: 23px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: large;  
+    margin-left: 19px; 
+}
+h3{
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 20pt;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+}
+/*Design do logo*/
+.logo > img{
+    margin-top: 1%;
+    width: 15%;
+    height: 5%;
+}
+
+
+/*Barra de menus*/
+.barralateral:hover{
+    background-color: rgba(175, 206, 172, 0.911);
+    width: 20%;
+    left: 20%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+ .barralateral{
+    position: absolute;
+    top: 5.1vh;
+    left: 5px;
+    width: 2vh;
+    height: 94vh;
+    background-color: inherit;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    background-color: rgba(175, 206, 172, 0.911);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -85px;
+    list-style-type: none;
+}
+.btnsair{
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+    margin-top: 200px;
+    cursor: pointer
+
+}
+.titulo{
+    margin-top: 15px;
+    font-size: 20px;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+.subtitulo{
+    margin-top: 20px;
+}
+.bemvindo{
+    color: white;
+    margin-left: 45vh;
+}
+
+.formulario {
+    margin-left: 30px;
+    margin-top: 5px;
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    margin-left: 26%;
+}

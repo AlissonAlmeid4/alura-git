@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cibo & Giola</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+<nav class="barramenu">
+    <div class="logo">
+        <img src="Imgs/LogoG&C.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+        <a href="inicio.html" style="background-color: rgba(175, 206, 172, 0.842);"><li class="item">Início</li></a>
+        <a href="galeria.html"><li class="item">Galeria</li></a>
+        <a href="produtos.html"><li class="item">Produtos</li></a>
+        <a href="faleConosco.html"><li class="item">Contato</li></a>
+        <li class="item"><button type="button" class="btnlogin" onclick="login()">Login</button></li>
+    </ul>
+    <div class="burger">
+        <div class="linha1"></div>
+        <div class="linha2"></div>
+        <div class="linha3"></div>
+    </div>
+</nav>
+<div class="caixavideo">
+    <div class="video">
+        <iframe width="65%" height="430" src="https://www.youtube.com/embed/C_9klgP0-fA" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="caixartextosuperior">
+    <div class="caixatexto">
+        <div class="caixa1">
+            <p>
+                Texto texto
+            </p>
+            <p>
+                Nossa comida é muito boa, é espetacular, é sensacional
+            </p>
+        </div>
+        <div class="caixa2">
+            <p>
+                Texto texto
+            </p>
+            <p>
+                Nossa comida é muito boa, é espetacular, é sensacional
+            </p>
+        </div>
+    </div>
+</div>
+
+ <div id="fundologin">
+     <div>
+        <img src="../CiboGiola/Imgs/x.png" class="x" onclick="login()">
+     </div>
+    <div class="container">
+        <div class="input">
+            <div class="logoLogin">
+                <img src="./Imgs/LogoG&C.png">
+            </div>
+                <h4>LOGIN</h4>
+            <p>
+                <input type="text" name="Login" id="Login" placeholder="Email">
+           <p>
+        </p>
+             <input type="password" name="Senha" id="Senha" placeholder="Senha">
+            </p>
+            <button type="button" class="btnesqueci" onclick="esquecisenha()">Esqueci minha senha</button>
+            <p>
+            <button type="button" class="btentrar" onclick="entrar()">Entrar</a></button>
+            <button type="button" class="btncadastrar" onclick="cadastrar()">Cadastre-se</button>
+            </p>
+        </div>
+        </div>
+</div> 
+
+<script src="src/pages.js"></script>
+<script>
+    $('#fundologin').fadeOut(0);
+    var x = document.getElementById("fundologin");
+    x.style.display = 'none';
+    
+</script>
+</body>
+</html>

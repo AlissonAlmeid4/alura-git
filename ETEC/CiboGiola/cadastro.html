@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--Head-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <script src="src/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav class="barramenu">
+        <div class="logo">
+            <img src="Imgs/LogoG&C.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <a href="inicio.html" ><li class="item">Início</li></a>
+            <a href="galeria.html"><li class="item">Galeria</li></a>
+            <a href="produtos.html"><li class="item">Produtos</li></a>
+            <a href="faleConosco.html"><li class="item">Contato</li></a>
+            <a href="cadastro.html"><li class="item" style="background-color: rgba(175, 206, 172, 0.842);">Cadastrar</li></a>
+        </ul>
+        <div class="burger">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+    </nav>
+    <h1 class="CadastroFC">
+        Cadastro
+        
+    </h1> <!--Cadatro-->
+    
+
+    <div class="comentarios">
+        <h5>
+            Faça seu cadastro e agilize sua compra. É rápido!
+            Todos os campos são obrigatórios.
+        </h5>
+    </div> <!--Comentáro superior-->
+
+    <div>
+        <form>
+            <!--PRIMEIRO NOME--><p>
+                <label for="txtpnome">PRIMEIRO NOME</label>
+                <input type="text" name="PRIMEIRO NOME" id="txtpnome" placeholder="Digite o nome">
+            </p>
+    </div>
+
+    <div>
+            <!--ÚLTIMO SOBRENOME--><p>
+                <label for="txtunome">ÚLTIMO SOBRENOME</label>
+                <input type="text" name="ÚLTIMO SOBRENOME" id="txtunome" placeholder="Exemplo: Silva">
+            </p>
+    </div>
+
+    <div>
+            <!--DATA DE NASCIMENTO--><p>
+                <label for="nasc">DATA DE NASCIMENTO</label>
+                <input type="text" name="DATA_DE-NASCIMENTO" id="nasc" class="DataNasc" placeholder="DD/MM/AAA">
+            </p>
+    </div>
+
+    <div>
+            <!--GÊNERO--><p>
+                <label for="GÊNERO">GÊNERO</label>
+                <select name="GÊNERO" id="GÊNERO">
+                    <option value="false"></option>
+                    <option value="MASCULINO">MASCULINO</option>
+                    <option value="FEMININO">FEMININO</option>
+                    <option value="PREFIRO NÃO INFORMAR">PREFIRO NÃO INFORMAR</option>
+                </select>
+            </p>
+    </div>
+
+    <div>
+            <!--NACIONALIDADE--><p>
+                <label for="txtnacionalidade">NACIONALIDADE</label>
+                <input type="text" name="NACIONALIDADE" id="txtnacionalidade" placeholder="Brasil">
+            </p>
+    </div>
+
+    <div>
+            <!--CPF--><p>
+                <label for="txtCPF">CPF</label>
+                <input type="text" name="CPF" id="txtCPF" class="txtCPF" placeholder="Digite o número">
+            </p>
+    </div>
+
+    <h5>
+            <!--Não sou brasileiro e não tenho CPF--><P>
+                <input type="checkbox">
+                <label for="">Não sou brasileiro e não tenho CPF</label>
+            </P>
+    </h5>
+
+    <div>
+            <!--TIPO DE DOCUMENTO--><p>
+                <label for="TIPO DE DOCUMENTO">TIPO DE DOCUMENTO</label>
+                <select name="TIPO DE DOCUMENTO" id="TIPO DE DOCUMENTO">
+                    <option value="false"></option>
+                    <option value="Registro Geral (RG)">Registro Geral (RG)</option>
+                    <option value="Cartreira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
+                    <option value="Identidade Militar">Identidade Militar</option>
+                    <option value="Passaport">Passaporte</option>
+                </select>
+            </p>
+    </div>
+
+    <div>
+            <!--NÚMEROS DO DOCUMENTO--><p>
+                <label for="numdoc">NÚMEROS DO DOCUMENTO</label>
+                <input type="text" name="Produto" id="numdoc" placeholder="Insira os números do documento">
+            </p>
+    </div>
+
+    <div>
+            <!--E-MAIL--><p>
+                <label for="email">E-MAIL</label>
+                <input type="text" name="E-MAIL" id="email" placeholder="Digite o e-mail">
+            </p>
+    </div>
+
+    <div>
+            <!--CONFIRME SEU E-MAIL--><p>
+                <label for="confirmemail">CONFIRME SEU E-MAIL</label>
+                <input type="text" name="CONFIRME SEU E-MAIL" id="confirmemail" placeholder="Digite o e-mail novamente">
+            </p>
+    </div>
+
+    <div>
+            <!--SENHA--><p>
+                <label for="txtsenha">SENHA</label>
+                <input type="password" name="SENHA" id="txtsenha" placeholder="Digite uma senha">
+            </p>
+    </div>
+
+    <div>
+            <!--CONFIRME SUA SENHA--><p>
+                <label for="confirmsenha">CONFIRME SUA SENHA</label>
+                <input type="password" name="CONFIRME SUA SENHA" id="confirmsenha" placeholder="Digite a senha novamente">
+            </p>
+    </div>
+
+    <h5>
+        <!--Concordo com os Termos e Condições de uso.--><P>
+            <input type="checkbox">
+            <label for="">Concordo com os Termos e Condições de uso.</label>
+        </P>
+</h5>
+
+    <div>
+            <p>
+                <button type="button" class="Btnentrar" onclick="entrar()">CADASTRAR</button>
+            
+            </p>
+        </form>
+    </div>
+</div>
+
+<script>
+    $('.DataNasc').mask('00/00/0000')
+    $('.txtCPF').mask('000.000.000-00')
+</script>
+</body>
+</html>
