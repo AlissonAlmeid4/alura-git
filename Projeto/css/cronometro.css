@@ -1,0 +1,42 @@
+
+.mensagemCronometro h1{
+  font-size: 30px;
+  padding-right:100px;
+}
+.mensagemCronometro {
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+ #cronometro{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+}
+#cronometro > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: rgba(0, 192, 150,0.8);
+    display: inline-block;
+}
+#cronometro div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: rgb(250, 50, 50);
+    display: inline-block;
+}
+.smalltext{
+    padding-top: 5px;
+    font-size: 18px;
+}
+.msgECronometro{
+    width: 41%;
+    margin-left: 15px;
+    margin-top: 15px;
+    background: rgba(255, 0, 0,0.7);
+    padding: 5px;
+}
