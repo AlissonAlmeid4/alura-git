@@ -13,18 +13,24 @@ body{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: sans-serif;
-
+    text-shadow: 2px 2px black;
 }
 .navbar{
     width: 100%;
     height:3rem;
-    background-color: rgba(255, 0, 0,0.8);
     
 }
 .navbar ul{
     position: absolute;
     top: -1px;
     right: 0px;
+}
+.submenu li{
+    display: none;
+}
+.submenu ul:hover{
+    display: list-item;
+    background-color: black;
 }
 
 @media screen and (max-width: 1070px)  {
