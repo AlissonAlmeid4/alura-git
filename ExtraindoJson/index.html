@@ -1,0 +1,41 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Documento</title>
+    <style>
+           .caixa{
+            margin: 0 auto;
+            text-align: left;
+            height: 500px;
+            width: 40%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <h1>Dados</h1>
+        <table>
+            <tr>
+                <td>
+                    <h3 id="id"></h3>
+                </td>
+                <td>
+                    <h3 id="nome"></h3>
+
+                </td>
+                <td>
+                    <h3 id="idade"></h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="module" >
+        //import dados from './source.js';
+        const dado = require('./source.js')
+        document.getElementById("id").innerHTML = dado.dados.nome 
+        document.getElementById("nome").innerHTML = dados[1].nome
+        document.getElementById("idade").innerHTML = dados[1].age;
+    </script>
+</body>
+</html>
