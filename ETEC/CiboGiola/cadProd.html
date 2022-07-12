@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="src/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+     <link rel="stylesheet" href="style/styleIntranet.css"> 
+</head>
+<body>
+
+    <nav class="barramenu">
+        <div class="logo" class="nav-links">
+            <img src="Imgs/LogoG&C.png" alt="Logo">      
+        </div>
+        <div class="barralateral">
+            <ul>
+                <li class="titulo">Produtos</li>
+                <li class="subtitulo"><a href="../CiboGiola/cadProd.html">Cadastrar Produtos</a></li>
+                <li class="subtitulo"><a href="../CiboGiola/cadFunc.html">Cadastrar Funcionários</a></li>
+           
+                <li><button type="button" class="btnsair" onclick="sair()">Sair</button></li>
+            </ul>
+        </div>
+    </nav>
+    <form class="formulario">
+        <h3>Preencha o formulário do Produto</h3>
+         <p>
+            <label for="txtPrato" >Nome do Prato:</label>
+            <input type="text" name="txtPrato" placeholder="Digite o nome do prato">
+        </p>
+        <p>
+            <label for="radioSalgado" >Tipo:</label>
+            <input type="radio" name="tipo" id="radioSalgado" value="Salgado">
+            <label for="radioSalgado">Salgado</label>
+            <input type="radio" name="tipo" id="radioDoce" value="doce">
+            <label for="radioDoce">Doce</label>
+        </p>
+
+        <p>
+            <label for="txtSubCategoria" >Subcategoria:</label>
+            <select name="txtSubCategoria" id="txtSubCategoria">
+            <option value="false"></option>           
+                    <option value="macarraão">macarrões</option>");
+                    <option value="pizza">Pizza</option>");
+                    <option value="risoto">Risoto</option>");
+            </select>
+        </p>
+        <br>
+        <p>
+            Ingredientes - <button>Cadastrar ingrediente</button>
+        </p>
+        <p>
+            <select name="txtIngredientes" id="txtIngredientes">
+            <option value="false"></option>           
+                    <option value="Sal" id="ingredientes" >Sal</option>");
+                    <option value="Molho de Tomate" id="ingredientes">Molho de tomate</option>");
+                    <option value="Mussarela" id="ingredientes">Mussarela</option>");
+            </select>
+            <button type="button" id="inserir">Inserir ingrediente</button>
+
+            <br>
+        </p>
+        
+        
+        <p>
+            Quantidade
+        </p>
+        <p>
+            <ol class="listaIngrediente"></ol>
+            <p><input type="number" name="" id="gramas" > Gramas</p>
+        </p>
+      <br>
+        <p>
+            <label for="txtDescricao" >Descrição:</label>
+        </p>
+        <p>
+            <input type="text" name="txtDescricao" id="" class="txtDescricao">
+        </p>
+
+        <p>
+            <label for="tempPreparo">Tempo de preparo</label>
+        </p>
+        <p>
+            <input type="number" name="tempPreparo" id="" class="tempPreparo"> minutos
+        </p>
+
+        <br>
+        <p>
+            <label for="valorPrato">Valor do Prato</label>
+        </p>
+        <p>
+            <input type="number" name="numValor" id="" class="numValor">
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+     <script src="src/pages.js"></script> 
+</body>
+</html>
