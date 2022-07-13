@@ -1,7 +1,9 @@
 body{
-    background-image: url('../img/deitadosNaGrama.jfif'); */
+    background-image: url('../img/deitadosNaGrama.jfif'); 
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
+    background-position: top;
+    background-attachment: fixed;
 }
 .mapa iframe{
     width: 400px;
@@ -12,13 +14,13 @@ body{
 }
 .nomenoivos > nav{
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
 }
 .nomenoivos h1{
     font-family: 'Satisfy', cursive;
     font-family: 'The Nautigal', cursive;
     font-size: 182px;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 @media screen and (max-width: 1070px)  {
