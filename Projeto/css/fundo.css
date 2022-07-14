@@ -6,13 +6,25 @@ body{
     background-attachment: fixed;
     
 }
-
 .mapa iframe{
-    width: 400px;
-    height: 250px;
+    width: 99%;
+    height: 92%;
     position: absolute;
     bottom: 0;
-    left: 10px;
+    right:0px;
+    
+}
+.mapa div{
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    right:0px;
+    background: rgba(255, 255, 255, 0.6)
+}
+.mapa div h2{
+    position: absolute;
+    left: 15px;
 }
 .nomenoivos > nav{
     display: flex;
@@ -30,8 +42,13 @@ body{
 @media screen and (max-width: 1070px)  {
 .mapa iframe{
     margin-left: 10px;
-    width: 98%;
+    width: 80%;
+   
 
+}
+.nomenoivos h1{
+    width: 100%;
+    font-size: 140px;
 }
 
 }
