@@ -1,14 +1,16 @@
 
 .mensagemCronometro h1{
   font-size: 30px;
-  padding-right:100px;
 }
 .mensagemCronometro {
-    display: inline-block;
     text-align: left;
     font-weight: bold;
     font-size: 18px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 400px;
+    height: 200px;
+    margin-top: 15px;
+    
 }
 .msgECronometro #cronometro {
     
@@ -24,16 +26,12 @@
     font-size: 22px;
 }
  #cronometro{
-    
-    /* font-family: sans-serif; */
-    color: rgb(2, 2, 2);
+    width: 400px;
+    color: rgb(255, 255, 255);
     display: inline-block;
-    /* font-size: 30px; */
-    padding-right: 30px;
 }
 #cronometro > div{
     text-align: center;
-    padding: 10px;
     border-radius: 3px;
     display: inline-block;
     
@@ -47,13 +45,13 @@
     font-size: 18px;
 }
 .msgECronometro{
-    width: 1000px;
-    margin-left: 10px;
+    width:400px;
+    margin-left: 20px;
     margin-top: 5px;
     padding: 5px;
-    display: flex;
-    float: left;
     align-items: center;
+    position: absolute;
+    right: 0;
 }
 
 @media screen and (max-width: 1070px)  {

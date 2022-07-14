@@ -4,7 +4,9 @@ body{
     background-size: 100vw 100vh;
     background-position: top;
     background-attachment: fixed;
+    
 }
+
 .mapa iframe{
     width: 400px;
     height: 250px;
@@ -21,6 +23,8 @@ body{
     font-family: 'The Nautigal', cursive;
     font-size: 182px;
     margin-top: 1%;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #000;
 }
 
 @media screen and (max-width: 1070px)  {
