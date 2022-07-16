@@ -22,33 +22,41 @@ body{
     right:0px;
     background: rgba(255, 255, 255, 0.6)
 }
-.mapa div h2{
-    position: absolute;
-    left: 15px;
+
+.nomenoivos{
+    width: 400px;
+
 }
-.nomenoivos > nav{
-    display: flex;
-    justify-content:flex-start;
-}
-.nomenoivos h1{
+
+.nomenoivos > nav h3{
     font-family: 'Satisfy', cursive;
     font-family: 'The Nautigal', cursive;
-    font-size: 182px;
-    margin-top: 1%;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    background: rgba(255, 255, 255, 0.6);
+    
+}
+.nomenoivos h2{
+    font-family: 'Satisfy', cursive;
+    font-family: 'The Nautigal', cursive;
+    font-size: 82px;
+    margin-top: 3%;
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px #000;
 }
 
-@media screen and (max-width: 1070px)  {
+@media screen and (max-width: 930px)  {
 .mapa iframe{
     margin-left: 10px;
     width: 80%;
-   
-
 }
-.nomenoivos h1{
-    width: 100%;
-    font-size: 140px;
+.screen{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+h1,h2,p, div{
+    text-align: center;
 }
 
 }

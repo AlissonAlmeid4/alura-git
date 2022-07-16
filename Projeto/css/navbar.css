@@ -5,7 +5,7 @@
 
 body > nav {
     display: flex;
-    justify-content:center;
+    justify-content:center; 
 }
 
 nav .menu {
@@ -78,6 +78,21 @@ nav .menu {
         padding: 5px 10px;
         display: flex;
         font-size: 16px;
+        font-weight: bold;
+        
+    }
+    .menu li ul li {
+        border: 1px solid #c0c0c0;
+        display: block;
+        width: 150px;
+    }
+    .menu li ul {
+
+        margin-top: 20px;
+    }
+    .menu li a:hover {
+        background: #333;
+        height: 35px;
     }
     }
 
@@ -89,6 +104,6 @@ nav .menu {
     }
     .menu li a {
         display: flex;
-        font-size: 12px;
+        font-weight: bold;
     }
     }

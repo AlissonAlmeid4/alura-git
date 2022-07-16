@@ -3,17 +3,15 @@
   font-size: 30px;
 }
 .mensagemCronometro {
-    text-align: left;
+    text-align: right;
     font-weight: bold;
     font-size: 18px;
-    color: rgb(255, 255, 255);
     width: 400px;
-    height: 200px;
     margin-top: 15px;
+    background:rgba(255, 255, 255, 0.6);
     
 }
 .msgECronometro #cronometro {
-    
     justify-content:flex-start;
     font-size: 52px;
 }
@@ -28,7 +26,7 @@
  #cronometro{
     width: 400px;
     color: rgb(255, 255, 255);
-    display: inline-block;
+    text-align: right;
 }
 #cronometro > div{
     text-align: center;
@@ -43,42 +41,28 @@
 .smalltext{
     padding-top: 5px;
     font-size: 18px;
+    
 }
 .msgECronometro{
     width:400px;
-    margin-left: 20px;
-    margin-top: 5px;
     padding: 5px;
     align-items: center;
     position: absolute;
     right: 0;
+    top: 60px;
 }
 
-@media screen and (max-width: 1070px)  {
+@media screen and (max-width: 915px)  {
+    .mensagemCronometro{
+        position: absolute;
+        right: 0;
+        background:rgba(255, 255, 255, 0.6);
 
-      .mensagemCronometro {
-          display: inline-block;
-          font-size: 18px;
-          width: 300px;
-      }
-       #cronometro{
-          margin-top: 10px;
-          font-family: sans-serif;
-          color: #fff;
-          display: inline-block;
-          font-size: 30px;
-      }
-      #cronometro > div{
-        text-align: center;
-          padding: 8px;
-          display: inline-block;
-          width: auto;
-      }
-      .msgECronometro{
-          width: 97%;
-          margin-left: 5px;
-          margin-right: 5px;
-          margin-top: 15px;
-      }
+    }
+    
+    .msgECronometro{
+        position: absolute;
+        right: 0;
+    }
 
 }
