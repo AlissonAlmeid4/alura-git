@@ -1,0 +1,32 @@
+.tranferencia{
+    display: block;
+    justify-content: center;
+    margin-top: 45px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+.qrcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.tranferencia h2{
+    padding: 25px;
+}
+.tranferencia > div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.tranferencia div a:hover{
+    color: rgb(2, 2, 2);
+    text-decoration:line-through;
+}
+.tranferencia h2{
+    margin-top: 15px;
+}

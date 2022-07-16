@@ -1,0 +1,62 @@
+body{
+    background-image: url('../img/deitadosNaGrama.jfif'); 
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: top;
+    background-attachment: fixed;
+    
+}
+.mapa iframe{
+    width: 99%;
+    height: 92%;
+    position: absolute;
+    bottom: 0;
+    right:0px;
+    
+}
+.mapa div{
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    right:0px;
+    background: rgba(255, 255, 255, 0.6)
+}
+
+.nomenoivos{
+    width: 400px;
+
+}
+
+.nomenoivos > nav h3{
+    font-family: 'Satisfy', cursive;
+    font-family: 'The Nautigal', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    background: rgba(255, 255, 255, 0.6);
+    
+}
+.nomenoivos h2{
+    font-family: 'Satisfy', cursive;
+    font-family: 'The Nautigal', cursive;
+    font-size: 82px;
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #000;
+}
+
+@media screen and (max-width: 930px)  {
+.mapa iframe{
+    margin-left: 10px;
+    width: 80%;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+h1,h2,p, div{
+    text-align: center;
+}
+
+}
