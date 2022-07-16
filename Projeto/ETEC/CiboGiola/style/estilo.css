@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("../Imgs/fundoMacarrao.jpg");
+    background-repeat: no-repeat;    
+    background-size: 100vw 100vh;
+    background-position: top;
+    background-attachment: fixed;
+}
+.barramenu{
+    background-color: rgba(175, 206, 172, 0.911);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.item{
+    padding: 25px;
+}
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-links  button{
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.subcategoria2 button {
+    background-color: white;
+}
+.nav-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.nav-links li{
+    list-style-type: none;
+}
+.nav-links a li{
+    text-decoration: none;
+    color: white;
+}
+
+
+.btnlogin{
+    cursor: pointer;
+}
+
+/*Design do logo*/
+.logo > img{
+    margin-top: 3%;
+    width: 35%;
+    height: 10%;
+}
+h2 {
+    margin: 15px;
+}
+.parteinterna > img{
+    width: 300px;
+    border: 5px solid rgb(71, 133, 112);
+    display: flex;
+    justify-content: center;
+    float: left;
+    cursor: zoom-in;
+}
+.imggrande img{
+    position: absolute;
+    width: 1024px;
+    height: 720px;
+    cursor: zoom-out;
+}
+#imagens{
+    margin-left: 17%;
+}
+.parteinterna> img:hover, .parteinterna2 > img:hover{
+    border: 5px solid rgb(47, 179, 135);
+}
+.parteinterna2 > img{
+    width: 300px;
+    border: 5px solid rgb(71, 133, 112);
+    display: flex;
+    justify-content: center;
+    float: right;
+    cursor: zoom-in;
+}
+.anuncio{
+    background-color: rgba(175, 206, 172, 0.7);
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    margin: 30px;
+    float: left;
+
+}
+.anuncio2{
+    background-color: rgba(175, 206, 172, 0.7);
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: right;
+    margin: 30px;
+    float: right;
+    
+}
+.descricao{
+    float: left;
+    padding: 10px;
+    
+}
+.descricao2{
+    float: right;
+    padding: 10px;
+    
+}
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    background-color: rgba(175, 206, 172, 0.7);
+    padding: 5px;
+    width: 90%;
+}
+.caixavideo{
+    justify-content: center;
+    display: flex;
+}
+.caixatexto{
+    display: flex;
+}
+.parteinterna > img, .parteinterna2 > img{
+    width: 300px;
+    height: 200px;
+}
+p{
+    margin-top: 23px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: large;  
+}
+h3{
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 20pt;
+}
+.contato{
+    margin-top: 2%;
+    background-color: rgba(175, 206, 172, 0.9);
+    padding: 5px;
+    width: 35%;
+    
+}
+.contato > h1{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+.imgcontato{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    width: 45%;
+}
+.fundocontato{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    background-color: rgba(145, 170, 142, 0.7);
+    padding: 5px;
+    width: 80%;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
+.burger{
+    cursor: pointer;
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
+
+    @media screen and (max-width: 900px) {
+    body{
+        overflow-x: hidden;
+    }    
+    .burger{
+        display: block;
+        margin-right: 20px;
+    }
+    
+    .nav-links{
+        position: absolute;
+        top: 11.5vh;
+        right: 0;
+        width: 40%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        background-color: inherit;
+        margin-right: 0;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+    .item{
+        display: none;
+        transform: scaleY(100%);
+        transition: 2s ease-in-out;
+    }
+    
+    .internologin{
+        height: 410px;
+        text-overflow: clip;
+    }
+  
+}
+.active{
+    transform: translateY(10%);
+    display: block;
+}
+.linha1,
+.linha2,
+.linha3{
+    transition: 1s;
+}
+.nav-active{
+    transform: translateX(0%);
+}
+.linha1-active{
+    position: absolute;
+    transform: rotate(405deg);
+}
+.linha2-active{
+    position: absolute;
+    opacity: 0;
+}
+.linha3-active{
+    transform: rotate(135deg);
+}
+/*Aba Produtos*/
+.fundoProduto{
+    margin-top: 10px;
+    background-color: rgba(175, 206, 172, 0.7);
+    display: flex;
+    justify-content: space-between;
+}
+.categoria{
+    width: 60%;
+    height: 500px;
+    text-align: center;
+}
+.categoria > h3{
+    margin-bottom: 15px;
+}
+.lista{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.lista > button{
+    font-size: 19px;
+    color: white;
+    background: black;
+    width: 90%;
+    height: 40px;
+    border-radius: 15px;
+}
+.subcategoria{
+    color: white;
+    background: black;
+    width: 80%;
+    border-radius: 25px;
+    margin-top: 1px;
+    padding: 15px;
+}
+.subcategoria > li{
+    list-style: none;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.subcategoria button, #btnCar{
+    margin-left: 15px;
+    background: rgba(175, 206, 172, 0.7);
+    color: white;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.carrinho{
+    background: rgba(103, 129, 100, 0.7);
+    width: 30%;
+    height: 300px;
+    
+}
+.qtde{
+    width: 10%;
+}
+.listaCarrinho{
+    background-color: black;
+    color: white ;
+    display: flex;
+
+}
+#BruschettaTradicional  h5, #Bruschettabrie  h5, #BruschettaMussarela h5, input {
+    margin-left: 15px;
+}
+h5 > button{
+    background: black;
+    border: none;
+    color: white;
+}
+
+.exibir{
+    color: white;
+    margin-left: 20px;
+}
+#btnCar{
+    background: rgba(175, 206, 172, 0.7);
+    color: white;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+/* Botão comprar */
+.btnComprar{
+    background: white;
+    border: white;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+/* Texto de entrada - Login */
+.caixartextosuperior{
+    display: flex;
+    justify-content: center;
+}
+.caixatexto{
+    width: 90%;
+    margin-top: 1%;
+}
+.caixa1{
+    background: rgba(175, 206, 172, 0.7);
+    width: 100%;
+    padding: 10px;
+}
+.caixa2{
+    background: rgba(175, 206, 172, 0.7);
+    width: 100%;
+    border-left: 3px double black;
+    padding: 10px;
+
+}
+
+/* Login */
+
+#fundologin{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(122, 133, 121, 0.7);
+    position: absolute;
+    top: 0px;
+    backdrop-filter: blur(20px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+button{
+    cursor: pointer;
+    
+}
+.input{
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    }
+    #Login, #Senha{
+        border-color: rgba(147, 173, 145, 0.911);
+        padding: 5px 25px;
+    }
+    #Login:hover, #Senha:hover{
+        border-color: rgba(88, 104, 87, 0.911);
+        padding: 5px 25px;
+    }
+    .btentrar, .btncadastrar{
+        background: rgba(147, 173, 145, 0.911);
+        padding: 5px 15px;
+        color: white;
+    }
+    .btentrar:hover, .btncadastrar:hover{
+        background: rgba(88, 104, 87, 0.911);
+        padding: 5px 15px;
+    }
+    /* .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: rgb(165, 75, 75);
+        text-shadow: 2px 1px rgb(8, 8, 8);
+    } */
+    .logoLogin > img{
+        width: 60%;
+        height: 20%;
+    }
+
+    .x {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        float: right;
+        
+    }
+    /* Toda classe que inicia com R pertence a pagina RecSenha */
+    .RecBody{
+        background-color: rgba(175, 206, 172, 0.911);
+       
+       }
+    .Recinput{
+    
+            width: 300px;
+            height: 400px;
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 36px 0 ;
+            border: solid 1px black;
+    }
+    .RecContainer {
+        width: 99vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px;
+    }
+    .pRec{
+        text-align: center;
+        padding: 6px;
+        
+    }
+    
+    .RecSenha{
+        width: 135px;
+        height: 91px;
+    
+    }
