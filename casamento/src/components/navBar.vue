@@ -3,21 +3,21 @@
     <div class="navbar">
     <ul>
         <li><a href="../pages/index.vue">INICIO</a></li>
-        <li><a href="">SOBRE OS NOIVOS</a></li>
+        <li><a href="../pages/index.vue">SOBRE OS NOIVOS</a></li>
         <li><a href="">CASAMENTO</a>
             <ul>
-                <li><a href="">Nossa História</a></li>
-                <li><a href="">Mensagem aos noivos</a></li>
-                <li><a href="">Galeria</a></li>
+                <li><a href="../pages/index.vue">Nossa História</a></li>
+                <li><a href="../pages/index.vue">Mensagem aos noivos</a></li>
+                <li><a href="../pages/index.vue">Galeria</a></li>
            </ul>
         </li>
         <li><a href="">PRESENTES</a>
             <ul>
-                <li><a href="sugestao.html">Sujestão de Presentes</a></li>
-                <li><a href="transferencia.html">Transferência</a></li>
+                <li><a href="../pages/index.vue">Sujestão de Presentes</a></li>
+                <li><a href="../pages/index.vue">Transferência</a></li>
             </ul>
         </li>
-        <li><a href="contato.html">CONTATO</a></li>
+        <li><a href="../pages/index.vue">CONTATO</a></li>
       </ul>
     </div>
   </div>
@@ -42,7 +42,7 @@ a
     .navbar{
         width: 100%;
         height: 30px;
-        background-color: rgba(0,0,0,0.9);
+        background-color: rgba(255, 0, 140, 0.5);
         padding: 05px 0px 05px 0px;
         display: flex;
         justify-content: center;

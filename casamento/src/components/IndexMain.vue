@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Bem vindo</h1>
+        <h1>Suellen & Alisson</h1>
         <!-- <img src="../fotos/DEITADOSGRAMA.jpg" alt="" srcset=""> -->
     </div>
 </template>

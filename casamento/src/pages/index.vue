@@ -28,6 +28,6 @@ export default defineComponent({
   margin-top: 60px;
 }
 body{
-  background: #ff0080;
+  background: #fff;
 }
 </style>
