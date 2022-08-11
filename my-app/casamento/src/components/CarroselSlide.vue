@@ -4,7 +4,7 @@
       arrows
       animated
       v-model="slide"
-      height="800px"
+      height="750px"
     >
       <q-carousel-slide name="first" img-src="../photos/paisagem.jpeg">
         <div class="absolute-bottom custom-caption">

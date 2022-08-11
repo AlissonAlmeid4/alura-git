@@ -1,8 +1,8 @@
 
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="glossy">
-      <q-toolbar>
+  <q-layout view="lHh Lpr lFf"> 
+    <q-header elevated class="glossy"  >
+      <q-toolbar class="bg-light-green-5">
         <q-btn
           flat
           dense
@@ -23,13 +23,13 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      class="bg-grey-2"
+      class="bg-light-green-2"
     >
       <q-list>
         <q-item-label header>Menu</q-item-label>
         <q-item clickable tag="a" href="./App.vue">
           <q-item-section avatar>
-            <q-icon name="school" />
+            <q-icon name="home" />
           </q-item-section>
           <q-item-section>
             <q-item-label>Inicio</q-item-label>
@@ -79,12 +79,13 @@
       <CarrosselSlide />
       <ContagemRegressiva/>
       <MensagemBemvindo/>
+      <GallerySlide/>
     </q-page-container>
   </q-layout>
 </template>
-<style scoped>
+<style >
   body{
-    background: rgb(252, 252, 252);
+    background: rgb(250, 241, 230);
   }
 </style>
 <script>
@@ -92,14 +93,15 @@ import { ref } from 'vue'
 import CarrosselSlide from './components/CarroselSlide.vue'
 import ContagemRegressiva from './components/ContagemRegressiva.vue'
 import MensagemBemvindo from './components/MensagemBemvindo'
-
+import GallerySlide from './components/GallerySlide.vue'
 export default {
   name: 'App',
 
   components: {
     CarrosselSlide,
     ContagemRegressiva,
-    MensagemBemvindo
+    MensagemBemvindo,
+    GallerySlide
   },
 
   setup () {
