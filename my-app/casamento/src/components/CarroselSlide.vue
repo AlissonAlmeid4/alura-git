@@ -8,8 +8,8 @@
     >
       <q-carousel-slide name="first" img-src="../photos/paisagem.jpeg">
         <div class="absolute-bottom custom-caption">
-          <div class="text-h2">First stop</div>
-          <div class="text-subtitle1">Mountains</div>
+          <div class="text-h3">Suellen & Alisson</div>
+          <div class="text-subtitle1">"... e quando a amizade não teve mais para onde crescer, ela virou amor!"</div>
         </div>
       </q-carousel-slide>
 

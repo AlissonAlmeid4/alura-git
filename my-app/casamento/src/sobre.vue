@@ -41,7 +41,7 @@
           </q-item-section>
           <q-item-section>
             <q-item-label>Sobre</q-item-label>
-            <q-item-label caption>Nossa História</q-item-label>
+            <q-item-label caption>Embarque na história dos noivos</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable tag="a" target="_blank" href="https://chat.quasar.dev">
@@ -75,10 +75,7 @@
     </q-drawer>
 
     <q-page-container>
-        <CarrosselSlide />
-        <ContagemRegressiva/>
-        <MensagemBemvindo/>
-        <GallerySlide/>
+
 
         <FooTer/>
     </q-page-container>
@@ -97,20 +94,13 @@
 </style>
 <script>
 import { ref } from 'vue'
-import CarrosselSlide from './components/CarroselSlide.vue'
-import ContagemRegressiva from './components/ContagemRegressiva.vue'
-import MensagemBemvindo from './components/MensagemBemvindo'
-import GallerySlide from './components/GallerySlide.vue'
 import FooTer from './components/FooTer.vue'
 
 export default {
   name: 'App',
 
   components: {
-    CarrosselSlide,
-    ContagemRegressiva,
-    MensagemBemvindo,
-    GallerySlide,
+   
     FooTer
   },
 

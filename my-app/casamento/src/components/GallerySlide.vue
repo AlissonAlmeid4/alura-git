@@ -1,46 +1,42 @@
-<template>
-  <div class="q-pa-md">
-    <div class="q-col-gutter-md row items-start">
-      <div class="col-6">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" no-native-menu>
-          <div class="absolute-bottom text-subtitle1 text-center">
-            Caption
-          </div>
+<template >
+     <div class="q-pa-md">
+      <div class="q-pa-md">
+        <div class="mensagem ">
+            <div class="text-h4">FOTOS RECENTES</div>
+        </div>
+      </div>
+
+    <div class="q-gutter-md row  justify-center">
+      
+      <div class="col-4">
+        <q-img src="../photos/DEITADOSGRAMA.jpg" no-native-menu height="600px">
         </q-img>
       </div>
 
-      <div class="col-6">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" no-native-menu>
-          <div class="absolute-top text-center">
-            Caption
-          </div>
+      <div class="col-4">
+        <q-img src="../photos/CHAPEUSALA.jpg" no-native-menu height="600px">
+    
         </q-img>
       </div>
 
-      <div class="col-6">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" no-native-menu>
-          <div class="absolute-bottom-right text-subtitle2">
-            Caption
-          </div>
+      <div class="col-4">
+        <q-img src="../photos/POSEGRAMA.jpg" no-native-menu height="600px">
+   
         </q-img>
       </div>
 
-      <div class="col-6">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" no-native-menu>
-          <q-icon class="absolute all-pointer-events" size="32px" name="info" color="white" style="top: 8px; left: 8px">
-            <q-tooltip>
-              Tooltip
-            </q-tooltip>
-          </q-icon>
+      <div class="col-4">
+        <q-img src="../photos/NATURAL.jpg" no-native-menu height="600px">
+
         </q-img>
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
 export default {
-
 }
 </script>
 
