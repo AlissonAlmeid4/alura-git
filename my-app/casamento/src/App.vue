@@ -77,19 +77,26 @@
 
     <q-page-container>
       <CarrosselSlide />
+      <ContagemRegressiva/>
     </q-page-container>
   </q-layout>
 </template>
-
+<style scoped>
+  body{
+    background: rgb(252, 252, 252);
+  }
+</style>
 <script>
 import { ref } from 'vue'
 import CarrosselSlide from './components/CarroselSlide.vue'
+import ContagemRegressiva from './components/ContagemRegressiva.vue'
 
 export default {
   name: 'App',
 
   components: {
     CarrosselSlide,
+    ContagemRegressiva
   },
 
   setup () {

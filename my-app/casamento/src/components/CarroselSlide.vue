@@ -1,37 +1,38 @@
 <template>
-  <div class="q-pa-md" >
+  <div class="q-pa-md">
     <q-carousel
+      arrows
       animated
       v-model="slide"
-      navigation
-      infinite
-      :autoplay="autoplay"
-      arrows
-      transition-prev="slide-right"
-      transition-next="slide-left"
-      @mouseenter="autoplay = false"
-      @mouseleave="autoplay = true"
+      height="800px"
     >
-      <q-carousel-slide :name="1" img-src="../photos/BEIJOTESTA.jpg" />
-      <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+      <q-carousel-slide name="first" img-src="../photos/paisagem.jpeg">
+        <div class="absolute-bottom custom-caption">
+          <div class="text-h2">First stop</div>
+          <div class="text-subtitle1">Mountains</div>
+        </div>
+      </q-carousel-slide>
+
     </q-carousel>
   </div>
 </template>
 
-<style>
-</style>
-
 <script>
+import { ref } from 'vue'
 
 export default {
-  name: 'CarroselSlide',
-  data () {
+  setup () {
     return {
-      slide: 1,
-      autoplay: true
+      slide: ref('first')
     }
   }
 }
 </script>
+
+<style lang="sass" scoped>
+.custom-caption
+  text-align: center
+  padding: 12px
+  color: white
+  background-color: rgba(0, 0, 0, .3)
+</style>
