@@ -79,7 +79,6 @@
         <ContagemRegressiva/>
         <MensagemBemvindo/>
         <GallerySlide/>
-
         <FooTer/>
     </q-page-container>
 
@@ -102,7 +101,6 @@ import ContagemRegressiva from './components/ContagemRegressiva.vue'
 import MensagemBemvindo from './components/MensagemBemvindo'
 import GallerySlide from './components/GallerySlide.vue'
 import FooTer from './components/FooTer.vue'
-
 export default {
   name: 'App',
 
