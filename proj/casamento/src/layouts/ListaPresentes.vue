@@ -5,7 +5,7 @@
     </div>
 <div class="lista">
   <div class="q-pa-md ">
-    <div class="column items-center" style="height: 200px; max-height: 100%">
+    <div class="column items-center" style="height: 1200px; ">
       <div class="col-8">
 <div class="q-pa-md row q-gutter-sm">
 <q-list >
