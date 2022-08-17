@@ -43,6 +43,7 @@
       <q-btn fab icon="keyboard_arrow_up" color="accent" />
     </q-page-scroller>
   </q-layout>
+  
 </template>
 
 <script>
