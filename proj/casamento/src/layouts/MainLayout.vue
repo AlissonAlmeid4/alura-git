@@ -43,7 +43,7 @@
       <q-btn fab icon="keyboard_arrow_up" color="accent" />
     </q-page-scroller>
   </q-layout>
-  
+
 </template>
 
 <script>
@@ -52,28 +52,28 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Home',
+    title: 'Inicio',
     caption: 'Assuntos Principais',
     icon: 'home',
     link: '/'
   },
   {
-    title: 'About',
+    title: 'Sobre',
     caption: 'Nossa História',
     icon: 'favorite',
     link: '/#/about'
   },
   {
-    title: 'Present',
+    title: 'Presentes',
     caption: 'Sujestão de Presente',
     icon: 'phone',
     link: '/#/present'
   },
   {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
+    title: 'Lista de presença',
+    caption: 'Confirme sua presença',
     icon: 'record_voice_over',
-    link: ''
+    link: '/#/gift'
   },
   {
     title: 'Twitter',
