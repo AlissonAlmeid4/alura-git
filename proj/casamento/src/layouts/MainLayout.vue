@@ -59,14 +59,14 @@ const linksList = [
   {
     title: 'About',
     caption: 'Nossa História',
-    icon: 'code',
+    icon: 'favorite',
     link: '/#/about'
   },
   {
-    title: 'Presents',
+    title: 'Present',
     caption: 'Sujestão de Presente',
-    icon: 'box',
-    link: ''
+    icon: 'phone',
+    link: '/#/present'
   },
   {
     title: 'Forum',

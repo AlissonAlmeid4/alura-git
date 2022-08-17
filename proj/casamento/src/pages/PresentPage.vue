@@ -1,13 +1,17 @@
 <template>
-  <MensagemNossaHistoria/>
+  <SujestaoPresentes/>
+  <EscolherPresente/>
+  <ListaPresentes/>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import MensagemNossaHistoria from 'src/layouts/mensagemNossaHistoria.vue';
+import SujestaoPresentes from '../layouts/SujestaoPresentes';
+import ListaPresentes from '../layouts/ListaPresentes';
+import EscolherPresente from 'src/layouts/escolherPresente.vue';
 
 export default defineComponent({
     name: "PresentPage",
-    components: { MensagemNossaHistoria }
+    components: { SujestaoPresentes, ListaPresentes, EscolherPresente }
 })
 </script>
