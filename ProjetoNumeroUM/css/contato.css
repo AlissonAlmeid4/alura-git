@@ -1,0 +1,50 @@
+
+body{
+    backdrop-filter: blur(10px);
+    height: 58rem;
+    font-family: 'Cormorant SC', serif;
+
+}
+.contato{
+    display: flex;
+    justify-content: center;
+}
+.noivos h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Satisfy', cursive;
+    font-family: 'The Nautigal', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #000;
+    font-size: 98px;
+    width: 700px;
+    
+}
+.noivos pre{
+    text-align: left;
+    margin-top: 32px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #000;
+}
+.suellen, .alisson{
+    display: inline-block;
+    text-align: left;
+    padding: 15px;
+    font-size: 18px;
+}
+@media screen and (max-width: 1080px)  {
+    .contato{
+        display: block;
+        
+    }
+    .noivos h1{
+        font-size: 54px;
+        width: 350px;
+    }
+    .suellen, .alisson{
+        display: block;
+        text-align: left;
+        padding: 15px;
+        font-size: 14px;
+    }
+}

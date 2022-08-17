@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suellen & Alisson</title>
+    <link rel="stylesheet" href="./css/fundo.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/cronometro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=The+Nautigal&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Bem Vindo</a></li>
+            <li><a href="sobre.html">Sobre os Noivos</a></li>
+            <li><a href="#">O Casamento</a>
+                <ul>
+                    <li><a href="ocasamento.html">O Casamento</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Presentes</a>
+                <ul>
+                    <li><a href="sugestao.html">Sujestão de Presentes</a></li>
+                    <li><a href="transferencia.html">Transferência</a></li>
+                </ul>
+            </li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="nomenoivos">
+        <nav>
+            <h2>Suellen & Alisson</h2>
+            <h3>
+                "... e quando a amizade não teve mais para onde crescer, ela virou amor!"
+            </h3>
+           
+        </nav>
+    </div>
+ <div class="screen">
+    <div class="msgECronometro">
+        <div id="cronometro">
+            <div>
+                <span class="days" id="day"></span>
+                <div class="smalltext">Dias</div>
+            </div>
+            <div>
+                <span class="hours" id="hour"></span>
+                <div class="smalltext">Horas</div>
+            </div>
+            <div>
+                <span class="minutes" id="minute"></span>
+                <div class="smalltext">Minutos</div>
+            </div>
+            <div>
+                <span class="seconds" id="second"></span>
+                <div class="smalltext">Segundos</div>
+            </div>
+        </div>
+        <div class="mensagemCronometro">
+            <h1>Contagem Regressiva</h1>
+            <p>Estamos ansiosos <br>
+                Junte-se a nós nessa espera</p>
+        </div>
+    </div>
+</div>
+<div class="convite">
+        <iframe 
+        src="./fotos/convite.jpg" id="myFrame" 
+            frameborder="0" style="border:0;" 
+                width="300" height="300">
+        </iframe>
+        
+<p>
+    <button id="bt"  onclick="print()" value="Imprima o seu convite">Imprima o seu convite</button>
+</p>
+<p>
+    <a href="./fotos/convite.jpg" class="baixa" download="Suellen&Alisson">Baixe o seu convite</a>
+</p>
+</div>
+    <script src="./Source/cronometro.js"></script>
+    <script src="./Source/impressao.js"></script>
+</body>
+
+</html>

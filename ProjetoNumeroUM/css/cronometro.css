@@ -1,0 +1,96 @@
+body{
+    font-family: 'Cormorant SC', serif;
+
+}
+.mensagemCronometro h1{
+  font-size: 30px;
+}
+.mensagemCronometro {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    width: 400px;
+    margin-top: 15px;
+    background:rgba(255, 255, 255, 0.6);
+}
+.msgECronometro #cronometro {
+    justify-content:flex-start;
+    font-size: 52px;
+}
+.mensagemCronometro h1{
+    justify-content:flex-start;
+    font-size: 38px;
+}
+.mensagemCronometro p{
+    justify-content:flex-start;
+    font-size: 22px;
+}
+ #cronometro{
+    width: 400px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+#cronometro > div{
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    
+}
+#cronometro div > span{
+    border-radius: 3px;
+    display: inline-block;
+}
+.smalltext{
+    padding-top: 5px;
+    font-size: 18px;
+    
+}
+.msgECronometro{
+    width:400px;
+    padding: 5px;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+@media screen and (max-width: 1080px)  {
+
+    #cronometro{
+        width: 400px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+    }
+}
+@media screen and (max-width: 780px)  {
+
+    #cronometro{
+        width: 400px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+    }
+    .mensagemCronometro{
+        width: 400px;
+    }
+    .msgECronometro{
+        position: absolute;
+        left: 0;
+    }
+}
+@media screen and (max-width: 528px)  {
+    .mensagemCronometro{
+       width: 390px;
+    }
+    .mensagemCronometro{
+        position: absolute;
+        left: 0;
+        background:rgba(255, 255, 255, 0.6);
+        margin-bottom: 20px; /* teste */
+    }
+    #cronometro{
+        width: 345px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin-bottom: 20px; /* teste */
+    }
+}

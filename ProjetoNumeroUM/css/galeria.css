@@ -1,0 +1,216 @@
+body{
+  font-family: 'Cormorant SC', serif;
+}
+/* Gallery */
+.gallery {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 90%;
+  max-height: 50vw;
+  overflow: hidden;
+}
+
+.gallery:before,
+.gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+
+
+.gallery__stream {
+  position: relative;
+  top: 0%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__item {
+  position: absolute;
+  width: 55%;
+  height: 1850px;
+  transition: 1s all ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+}
+
+.gallery__item:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  transform: translateX(-100%) scale(.8);
+}
+
+/* Posição da proxima imagem esquerda */
+.gallery__item:nth-child(2) {
+  left: 0;
+  z-index: 2;
+  transform: translateX(-20%) scale(.4);
+}
+
+/* Posição da imagem central */
+.gallery__item:nth-child(3) {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(0.55);
+}
+
+/* Posição da proxima imagem direita */
+.gallery__item:nth-child(4) {
+  left: 100%;
+  z-index: 2;
+  transform: translateX(-80%) scale(.4);
+}
+
+/* Imagem fica escondida */
+.gallery__item:nth-child(n+5) {
+  left: 100%;
+  z-index: 1;
+  transform: scale(.8);
+}
+
+/* Controllers */
+
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 40%;
+  height: 70%;
+  transform: translateX(-50%) translateY(-50%) scale(1.5);
+  cursor: pointer;
+}
+
+.gallery__prev {
+  left: 0;
+}
+
+.gallery__next {
+  left: 100%;
+}
+
+/* Backgrounds */
+
+.bg-1 {
+  background-image: url(../fotos/ABRACADOS.jpg)
+}
+
+.bg-2 {
+  background-image: url(../fotos/ABRACADOSQUINTAL.jpg);
+}
+
+.bg-3 {
+  background-image: url(../fotos/BEIJOTESTA.jpg);
+}
+
+.bg-4 {
+  background-image: url(../fotos/CHAPEUSALA.jpg);
+}
+
+.bg-5 {
+  background-image: url(../fotos/DEITADOSGRAMA.jpg);
+}
+
+.bg-6 {
+  background-image: url(../fotos/NATURAL.jpg);
+}
+
+.bg-7 {
+  background-image: url(../fotos/POSEGRAMA.jpg)
+}
+/* .bg-8 {
+  background-image: url(../fotos/CR7JAEGB.png);
+}
+.bg-9 {
+  background-image: url(../fotos/BARCOJAEGB.png);
+}
+.bg-10 {
+  background-image: url(../fotos/COURTOISJAEGB.png);
+}
+.bg-11 {
+  background-image: url(../fotos/ThanosJAEGB.png);
+}
+.bg-12 {
+  background-image: url(../fotos/PANDORAJAEGB.png);
+}
+.bg-13 {
+  background-image: url(../fotos/MIRANHAJAEGB.png);
+} */
+
+@media screen and (max-width: 528px)  {
+/* Gallery */
+.gallery {
+  top: 420px;
+  height: 600px;
+  max-height: 500vw;
+  width: 400px;
+  
+}
+
+.gallery:before,
+.gallery:after {
+  width: 0%;
+  height: 0%;
+}
+/* Zoom */
+.gallery__stream {
+  position: relative;
+  top: 390px;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 750px;
+}
+/* Posição da imagem dentro caixa */
+.gallery__item {
+  position: absolute;
+  bottom: 140px;
+  width: 400px;
+  height: 100%;
+  transition: 1s all ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+  
+}
+/* Posição da proxima imagem esquerda */
+.gallery__item:nth-child(2) {
+  left: 0;
+  z-index: 2;
+  transform: translateX(-50%) scale(.4);
+}
+
+/* Posição da imagem central */
+.gallery__item:nth-child(3) {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(0.6);
+}
+/* Posição da proxima imagem direita */
+.gallery__item:nth-child(4) {
+  left: 100%;
+  z-index: 2;
+  transform: translateX(-50%) scale(.4);
+}
+/* Controllers */
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 400px;
+  z-index: 4;
+  width: 50%;
+  height: 500px;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+}
+

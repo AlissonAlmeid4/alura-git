@@ -1,0 +1,45 @@
+body{
+    backdrop-filter: blur(20px);
+    height: 58rem;
+}
+button{
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Cormorant SC', serif;
+
+}
+.centralizartexto{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    margin-top: 20px;
+    text-align: center;
+    width: 800px;
+}
+.texto h1{
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #000;
+}
+.texto p{
+    color: rgb(255, 255, 255);
+    margin-top: 35px;
+    font-size: 22px;
+    
+}
+.texto p{
+    background:rgba(2, 2, 2,0.5);
+}
+
+@media screen and (max-width: 780px)  {
+    .texto{
+        width: 800px;
+    }
+   }
+

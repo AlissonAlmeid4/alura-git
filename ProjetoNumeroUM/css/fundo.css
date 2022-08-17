@@ -1,0 +1,141 @@
+body{
+    background-image: url('../img/deitadosNaGrama.jfif'); 
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: 'Cormorant SC', serif;
+
+}
+iframe{
+    display: none;
+}
+.convite {
+    text-align: center;
+}
+.convite p {
+   height: 60px;
+}
+.convite #bt, .baixa{
+    background: white;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    font-family: 'Cormorant SC', serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+.convite #bt:hover, .baixa:hover{
+    background: rgb(206, 64, 64);
+    color: #fff;
+}
+
+.nomenoivos{
+    width: 400px;
+}
+.nomenoivos h3{
+    width: 400px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.nomenoivos > nav h3{
+    font-family: 'Satisfy', cursive;
+    font-family: 'The Nautigal', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 38px;
+    background: rgba(255, 255, 255, 0.6);
+}
+.nomenoivos h2{
+    font-family: 'Satisfy', cursive;
+    font-family: 'The Nautigal', cursive;
+    font-size: 152px;
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #000;
+}
+
+@media screen and (max-width: 1080px)  {
+    body{
+        background-image: url('../img/deitadosNaGrama.jfif'); 
+        background-size: 100% 100%;
+    }
+    .nomenoivos{
+        width: 500px;
+    }
+.screen{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+h1,h2,p, div{
+    text-align: center;
+}
+.nomenoivos h3{
+    width: 300px;
+    position: relative;
+}
+}
+@media screen and (max-width: 780px)  {
+
+body{
+    background-image: url('../img/780.jpg'); 
+    background-size: 100% 100%;
+    background-position: top;
+    background-attachment:fixed;
+    
+}
+.nomenoivos{
+    width: 300px;
+}
+.nomenoivos h3{
+    width: 410px;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+}
+h1,h2,p, div{
+    text-align: center;
+}
+
+
+}
+@media screen and (max-width: 528px)  {
+
+body{
+    background-image: url('../img/428.jpg'); 
+}
+.nomenoivos{
+    width: 365px;
+}
+.nomenoivos h3{
+    width: 365px;
+    padding: 5px;
+    margin-bottom: 20px; /* teste */
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+h1,h2,p, div{
+    text-align: center;
+}
+.convite{
+    display: flex;
+}
+.convite p{
+    display: flex;
+    margin-left: 15px;
+}
+.convite #bt{
+    width: 150px;
+    padding: 10px;
+}
+
+}

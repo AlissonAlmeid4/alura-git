@@ -1,0 +1,24 @@
+body{
+    backdrop-filter: blur(10px);
+    height: 58rem;
+    font-family: 'Cormorant SC', serif;
+
+}
+.centralizartexto{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    margin-top: 20px;
+    text-align: center;
+}
+.texto h1{
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #000;
+}
+.texto pre{
+    margin-top: 15px;
+    font-size: 22px;
+}
