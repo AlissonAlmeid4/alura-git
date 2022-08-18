@@ -89,10 +89,10 @@ const linksList = [
     link: ''
   },
   {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
+    title: 'Apoie-nos',
+    caption: 'Transferencia',
     icon: 'money',
-    link: ''
+    link: '/#/transfer'
   }
 ]
 
