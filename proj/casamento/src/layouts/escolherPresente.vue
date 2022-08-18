@@ -4,7 +4,7 @@
         <div class="mensagem">
         <div class="text-subtitle1 " >
 <pre>
-Já sabe qual presente vai dar ? <q-btn label="Clique aqui" color="primary" @click="bar = true" /> e nos avise.
+Já sabe qual presente vai dar ? <q-btn label="Clique aqui" color="green" @click="bar = true" /> e nos avise.
 Providenciaremos um lugar para cada presente...
 
    <q-dialog v-model="bar" >

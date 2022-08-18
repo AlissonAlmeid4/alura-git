@@ -28,6 +28,13 @@ const routes = [
       { path: '', component: () => import('pages/PresencePage.vue') }
   ]
   },
+  {
+    path: '/maps',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/AddressPage.vue') }
+  ]
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
