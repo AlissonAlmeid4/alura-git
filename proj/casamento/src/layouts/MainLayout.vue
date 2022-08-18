@@ -79,7 +79,7 @@ const linksList = [
   {
     title: 'O Casamento',
     caption: 'Como chegar',
-    icon: 'rss_feed',
+    icon: 'public',
     link: '/#/maps'
   },
   {
@@ -91,7 +91,7 @@ const linksList = [
   {
     title: 'Quasar Awesome',
     caption: 'Community Quasar projects',
-    icon: 'favorite',
+    icon: 'money',
     link: ''
   }
 ]

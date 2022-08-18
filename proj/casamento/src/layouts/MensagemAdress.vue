@@ -1,28 +1,26 @@
 <template>
 <div class="q-pa-md">
     <div class="mensagem ">
-        <div class="text-h4">O CASA</div>
+        <div class="text-h4">O CASAMENTO</div>
     </div>
     <div class="mensagem">
-        <div class="text-h6">A MELHOR FORMA DE COMPARTILHAR ESSE MOMENTO COM VOCÊS É VIVENDO JUNTOS ESSE SONHO!</div>
+        <div class="text-h6">SUA PRESENÇA É IMPORTANTE PARA NÓS</div>
+        <div class="text-h7">VENHA FAZER PARTE DE NOSSA FESTA</div>
+
     </div>
 
     <div class="q-pa-md row justify-center">
-        <img src="../photos/casal.png"  width="200px" height="200px" alt="" srcset="">
+        <img src="../photos/grupo.png"  width="400px" height="200px" alt="" srcset="">
     </div>
     <div class="mensagem">
-        <div class="text-subtitle1">Aqui vamos compartilhar com vocês, queridos amigos e familiares,
-         o momentos mais marcantes da nossa história.
-         A contagem regressiva começa,
-         o frio na barriga e toda a ansiedade do dia mais esperado de nossas vidas
-         nos enche de alegria em tê-los ao nosso lado.
-         Vamos juntos nesse grande sonho, o dia em que uniremos nossas almas e
-          corpos para sempre, o dia do nosso casamento.
-          <br>
-          E por você ser importante para nós esta convidado a participar deste momento.</div>
+        <div class="text-subtitle1">
+        Os desafios até aqui foram enormes, mas em tudo Deus nos tem abençoado, nos protegido e alegrado. Nunca estivemos sozinhos. Deus sempre esteve conosco. <br>
+        E quando não achamos forças para ficar longe um do outro, a data foi marcada, Contamos com você em nosssa festa de casamento
+        <div class="text-h7">QUE SERÁ REALIZADA NO DIA XX DO MÊS XXXXXXXXX DO ANO DE 202X</div>
+      </div>
     </div>
     <div class="q-pa-md row justify-center">
-        <img src="../photos/BEIJOTESTA.jpg"  width="800px" height="900px" alt="" >
+        <img src="../photos/POSEGRAMA.jpg"  width="400px" height="500px" alt="" >
     </div>
 </div>
 </template>
