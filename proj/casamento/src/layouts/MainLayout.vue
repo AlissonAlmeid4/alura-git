@@ -54,45 +54,45 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Inicio',
-    caption: 'Assuntos Principais',
+    caption: 'Bem-Vindo',
     icon: 'home',
-    link: '/'
+    link: '/AlissonAlmeid4/#'
   },
   {
     title: 'Sobre',
     caption: 'Nossa História',
     icon: 'favorite',
-    link: '/#/about'
+    link: '/AlissonAlmeid4/#/about'
   },
   {
     title: 'Presentes',
     caption: 'Sujestão de Presente',
-    icon: 'phone',
-    link: '/#/present'
+    icon: 'link',
+    link: '/AlissonAlmeid4/#/present'
   },
   {
     title: 'Lista de presença',
     caption: 'Confirme sua presença',
     icon: 'record_voice_over',
-    link: '/#/gift'
+    link: '/AlissonAlmeid4/#/gift'
   },
   {
     title: 'O Casamento',
     caption: 'Como chegar',
-    icon: 'public',
-    link: '/#/maps'
+    icon: 'map',
+    link: '/AlissonAlmeid4/#/maps'
   },
   {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
+    title: 'Contato',
+    caption: 'Fale com a Gente',
     icon: 'public',
-    link: '/#'
+    link: '/AlissonAlmeid4/#/contact'
   },
   {
     title: 'Apoie-nos',
     caption: 'Transferencia',
-    icon: 'money',
-    link: '/#/transfer'
+    icon: '$',
+    link: '/AlissonAlmeid4/#/transfer'
   }
 ]
 

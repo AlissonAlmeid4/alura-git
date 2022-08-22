@@ -54,7 +54,7 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Inicio',
-    caption: 'Assuntos Principais',
+    caption: 'Bem-Vindo',
     icon: 'home',
     link: '/AlissonAlmeid4/#'
   },
@@ -67,7 +67,7 @@ const linksList = [
   {
     title: 'Presentes',
     caption: 'Sujestão de Presente',
-    icon: 'phone',
+    icon: 'link',
     link: '/AlissonAlmeid4/#/present'
   },
   {
@@ -79,19 +79,19 @@ const linksList = [
   {
     title: 'O Casamento',
     caption: 'Como chegar',
-    icon: 'public',
+    icon: 'map',
     link: '/AlissonAlmeid4/#/maps'
   },
   {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
+    title: 'Contato',
+    caption: 'Fale com a Gente',
     icon: 'public',
-    link: '/AlissonAlmeid4/#'
+    link: '/AlissonAlmeid4/#/contact'
   },
   {
     title: 'Apoie-nos',
     caption: 'Transferencia',
-    icon: 'money',
+    icon: '$',
     link: '/AlissonAlmeid4/#/transfer'
   }
 ]

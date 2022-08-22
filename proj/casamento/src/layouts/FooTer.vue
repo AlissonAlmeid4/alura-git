@@ -1,11 +1,10 @@
 <template>
-<div class="my-content">
-    <div class="q-pa-md row  justify-center ">
-        <div class="q-col-gutter-y-md">
-            Agradecemos a sua visita e contamos com sua presença em nossa festa!
-        </div>
-     </div>
-</div>
+<q-footer reveal elevated class="q-pt-xs row justify-center bg-light-green-5" >
+<pre>
+Agradecemos a sua visita e contamos com sua presença em nossa festa!
+  Texto e ideias por: Suellen & Alisson / Desenvolvimento: Alisson
+</pre>
+</q-footer>
 </template>
 
 <script>
