@@ -10,14 +10,14 @@
     <div class="q-pa-md row justify-center">
         <img src="../photos/love.png"  width="300px" height="300px" alt="" srcset="">
     </div>
-    <div class="mensagem">
+    <div class="mensagem ">
         <div class="text-subtitle1 " >
-        <pre>
-<strong>"... e quando a amizade não teve para onde crescer ela virou amor!"</strong> Essa é
-a frase que nos define. Pois foi exatamente assim que aconteceu... Foram sete anos de historia, mas vou resumi-la para vocês. Estava
-na casa da minha irmã em SP quando fomos congregar na comum dele. Foi lá onde tudo começou, depois do culto ficamos conversando,
-trocamos ideias e contatos. Voltei para Bahia e muitos anos foram se passaram e nossa amizade continuava a mesma, respondíamos
-mensagens daqui, status dali e sempre mantendo um ao outro atualizados, com o tempo nos tornamos então grandes amigos, compartilhávamos sonhos,
+<pre >
+<strong>"... e quando a amizade não teve para onde crescer ela virou amor!"</strong> Essa é <br>
+a frase que nos define. Pois foi exatamente assim que aconteceu... Foram sete anos de historia, mas vou resumi-la para vocês. Estava<br>
+na casa da minha irmã em SP quando fomos congregar na comum dele. Foi lá onde tudo começou, depois do culto ficamos conversando,<br>
+trocamos ideias e contatos. Voltei para Bahia e muitos anos foram se passaram e nossa amizade continuava a mesma, respondíamos<br>
+mensagens daqui, status dali e sempre mantendo um ao outro atualizados, com o tempo nos tornamos então grandes amigos, compartilhávamos sonhos,<br>
 medos e dai-lhe áudios gigantescos kkkkk, mas sempre deixando ali claro um para outro que só era amizade, e assim foi durante anos.
 
 Até que um  dia, ele resolveu pagar a visita que eu tinha feito a ele. Fiquei muito feliz com a vinda dele para Bahia, foi um final
@@ -47,7 +47,7 @@ Foi ai que percebi, ele estava falando sério.
 <strong>- Achei que estivesse brincando!</strong>
 
     <div class="q-pa-md row justify-center">
-        <img src="../photos/CASALARVORE.jpg"  width="500px" height="700px" alt="" >
+        <img src="../photos/CASALARVORE.jpg"  width="380px auto" height="700px" alt="" >
     </div>
 
 “Ele é meu melhor amigo, não quero estragar o que temos se isso der errado! Não quero estragar uma amizade de 7 anos”. Pensei.
@@ -94,4 +94,7 @@ export default {
     justify-content: center;
     align-items: center;
   }
+
+
+
 </style>

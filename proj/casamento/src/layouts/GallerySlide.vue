@@ -9,24 +9,24 @@
     <div class="q-gutter-md row  justify-center">
 
       <div class="col-4">
-        <q-img src="../photos/DEITADOSGRAMA.jpg" no-native-menu height="600px">
+        <q-img src="../photos/DEITADOSGRAMA.jpg" no-native-menu max-height="600px" >
         </q-img>
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/CHAPEUSALA.jpg" no-native-menu height="600px">
-
-        </q-img>
-      </div>
-
-      <div class="col-4">
-        <q-img src="../photos/POSEGRAMA.jpg" no-native-menu height="600px">
+        <q-img src="../photos/CHAPEUSALA.jpg" no-native-menu max-height="600px">
 
         </q-img>
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/NATURAL.jpg" no-native-menu height="600px">
+        <q-img src="../photos/POSEGRAMA.jpg" no-native-menu max-height="600px">
+
+        </q-img>
+      </div>
+
+      <div class="col-4">
+        <q-img src="../photos/NATURAL.jpg" no-native-menu max-height="600px">
 
         </q-img>
       </div>
@@ -41,5 +41,7 @@ export default {
 </script>
 
 <style>
-
+img{
+  height: 400px;
+}
 </style>

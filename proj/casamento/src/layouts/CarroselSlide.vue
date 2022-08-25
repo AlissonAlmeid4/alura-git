@@ -6,7 +6,7 @@
       v-model="slide"
       height="750px"
     >
-      <q-carousel-slide name="first" img-src="../photos/paisagem.jpeg">
+      <q-carousel-slide name="first" img-src="../photos/paisagem.jpeg" >
         <div class="absolute-bottom custom-caption">
           <div class="text-h3">Suellen & Alisson</div>
           <div class="text-subtitle1">"... e quando a amizade não teve mais para onde crescer, ela virou amor!"</div>
@@ -15,10 +15,12 @@
 
     </q-carousel>
   </div>
+
 </template>
 
 <script>
 import { ref } from 'vue'
+
 
 export default {
   setup () {
