@@ -1,9 +1,9 @@
 <template>
 <div class="q-pa-md">
 
-        <div class="mensagem">
+        <div class="mensagem column items-center">
         <div class="text-subtitle1 " >
-<pre>
+
 Já sabe qual presente vai dar ? <q-btn label="Clique aqui" color="green" @click="bar = true" /> e nos avise.
 Providenciaremos um lugar para cada presente...
 
@@ -17,11 +17,11 @@ Providenciaremos um lugar para cada presente...
         </q-bar>
         <q-card-section>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecabSP1VSOFOv7IHTgkPIvT219LPMXPJ38AsoaT1Sr5JhgOw/viewform?embedded=true"
-        width="440" height="677" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        width="440px" height="677" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
         </q-card-section>
       </q-card>
     </q-dialog>
-</pre>
+
           </div>
     </div>
 </div>
@@ -49,7 +49,10 @@ export default {
   text-align: center;
   padding: 12px;
   color: rgba(0, 0, 0, .7);
-
   }
-
+  @media screen and (max-width: 480px)  {
+    iframe{
+      width: auto;
+    }
+}
 </style>

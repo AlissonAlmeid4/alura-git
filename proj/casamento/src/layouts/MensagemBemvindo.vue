@@ -8,7 +8,7 @@
     </div>
 
     <div class="q-pa-md row justify-center">
-        <img src="../photos/casal.png"  width="300px" height="200px" alt="" srcset="">
+        <img src="../photos/casal.png"  width="360px"  alt="" srcset="">
     </div>
     <div class="mensagem">
         <div class="text-subtitle1">Aqui vamos compartilhar com vocês, queridos amigos e familiares,

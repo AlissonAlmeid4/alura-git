@@ -5,8 +5,9 @@
     </div>
 <div class="lista">
   <div class="q-pa-md ">
-    <div class="column items-center" style="height: 1200px; ">
+    <div class="presente column items-center" id="presente">
       <div class="col-8">
+
 <div class="q-pa-md row q-gutter-sm">
 <q-list >
   <q-item clickable v-ripple>
@@ -163,6 +164,13 @@ export default {
   text-align: center;
   padding: 12px;
   color: rgba(0, 0, 0, .7);
-
   }
+  #presente{
+    height: 1200px;
+  }
+@media screen and (max-width: 480px)  {
+  #presente{
+    height: 100%;
+  }
+}
 </style>
