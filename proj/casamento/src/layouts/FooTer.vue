@@ -2,7 +2,7 @@
 <q-footer reveal elevated class="q-pt-xs row justify-center bg-light-green-5" >
 <pre>
 Agradecemos a sua visita e contamos com sua presença em nossa festa!
-  Texto e ideias por: Suellen & Alisson / Desenvolvimento: Alisson
+  Produção de Conteúdo: Suellen & Alisson / Desenvolvimento: Alisson
 </pre>
 </q-footer>
 </template>
