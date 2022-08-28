@@ -9,24 +9,24 @@
     <div class="q-gutter-md row  justify-center">
 
       <div class="col-4">
-        <q-img src="../photos/pato.png" no-native-menu height="600px">
+        <q-img src="../photos/pato.png" no-native-menu height="150px auto">
         </q-img>
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/rampa.png" no-native-menu height="600px">
-
-        </q-img>
-      </div>
-
-      <div class="col-4">
-        <q-img src="../photos/lago.png" no-native-menu height="600px">
+        <q-img src="../photos/NATURAL.jpg" no-native-menu height="150px auto">
 
         </q-img>
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/NATURAL.jpg" no-native-menu height="600px">
+        <q-img src="../photos/lago.png" no-native-menu height="150px">
+
+        </q-img>
+      </div>
+
+      <div class="col-4">
+        <q-img src="../photos/rampa.png" no-native-menu height="150px">
 
         </q-img>
       </div>

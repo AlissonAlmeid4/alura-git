@@ -19,7 +19,7 @@
           <div class="mensagem">
         <div class="text-h6">para fazer a transferência.</div>
       <div class="q-pa-md row justify-center">
-        <img src="../photos/patinhas.gif"  >
+        <img src="../photos/patinhas.gif" class="patinhas" >
     </div>
     </div>
   </div>
@@ -46,5 +46,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media screen and (max-width: 480px)  {
+   img{
+    max-width: 250px;
+   }
   }
 </style>

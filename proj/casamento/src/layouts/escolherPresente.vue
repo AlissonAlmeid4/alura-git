@@ -16,8 +16,8 @@ Providenciaremos um lugar para cada presente...
           </q-btn>
         </q-bar>
         <q-card-section>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecabSP1VSOFOv7IHTgkPIvT219LPMXPJ38AsoaT1Sr5JhgOw/viewform?embedded=true"
-        width="440px" height="677" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecabSP1VSOFOv7IHTgkPIvT219LPMXPJ38AsoaT1Sr5JhgOw/viewform?embedded=true"
+          width="440" height="400 auto" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
         </q-card-section>
       </q-card>
     </q-dialog>

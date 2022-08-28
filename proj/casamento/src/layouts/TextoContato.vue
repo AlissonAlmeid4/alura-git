@@ -5,7 +5,7 @@
 
   <div class="q-ma-md">
     <div class="column items-center" style="height: 150px">
-      <div class="col col-md-8">
+      <div class="col col-md-8 ">
         <div class="q-pa-md shadow-up-2">
         <img src="../photos/ela.jpg" style="height: 300px" >
         </div>
@@ -26,10 +26,11 @@ alegria e saudades por onde passa!
 
         </pre>
       </div>
-      <div class="col col-md-8">
+      <div class="col ali col-md-8">
       <div class="q-pa-md shadow-up-2">
       <img src="../photos/Eu.png" style="height: 300px" >
       </div>
+
         <pre>
 <strong>Alisson Almeida</strong>
 <strong>Tel.:</strong> 11 9 92325271
@@ -59,5 +60,11 @@ export default {
 </script>
 
 <style>
-
+  @media screen and (max-width: 480px)  {
+    .ali{
+      position: absolute;
+      left: 20px;
+      top:850px
+    }
+  }
 </style>

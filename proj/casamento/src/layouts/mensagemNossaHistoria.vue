@@ -45,7 +45,7 @@ Foi ai que percebi, ele estava falando sério.
 <br>
 <strong>- Achei que estivesse brincando!</strong>
 <br>
-    <div class="q-pa-md row justify-center">
+    <div class="q-py-md column items-center">
         <img src="../photos/CASALARVORE.jpg"  width="380px auto" height="700px" alt="" >
     </div>
 <br>
@@ -96,6 +96,12 @@ export default {
 @media screen and (max-width: 480px)  {
     .texto{
    width:330px ;
+  }
+  .mensagem{
+    padding: 0px;
+    }
+  img{
+    width: 330px;
   }
 }
 
