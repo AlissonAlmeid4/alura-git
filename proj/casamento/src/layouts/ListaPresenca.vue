@@ -11,7 +11,7 @@
           <img src="../photos/casal.png"  width="200px" height="200px" alt="" srcset="">
       </div>
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScln3q-4S1y07I9QAHZx6pBeBkJnJGV5Z83cwjkqpmMIzgcIQ/viewform?embedded=true"
-  width="840" height="850" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+  width="840 auto" height="850" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
   </div>
 </template>
 
@@ -23,5 +23,10 @@ export default {
 </script>
 
 <style>
+  @media screen and (max-width: 480px)  {
+    iframe{
+      width: 300px;
+    }
 
+  }
 </style>

@@ -13,11 +13,11 @@
 <strong>Ingrid Suellen</strong>
 <strong>Tel.:</strong> 75 9 8127-9184
 <strong>E-mail.:</strong> ingrid.suellen260@gmail.com
-<strong>Ela é</strong> Extrovertida, brincalhona, chorona e
-risonha tudo ao mesmo tempo, gosta
-muito de cantar, viajar, sair com os
-amigos, fascinada pela arte da música
-e pelo universo cinematográfico.
+<strong>Ela é</strong> Extrovertida, brincalhona,
+chorona e risonha tudo ao mesmo tempo,
+gosta muito de cantar, viajar, sair com
+os amigos, fascinada pela arte da
+música e pelo universo cinematográfico.
 Formada em Marketing ela é comunicativa
 e dedicada, luta e batalha pelo o quer.
 Tem fama de mandona e chatinha mas com
@@ -60,11 +60,13 @@ export default {
 </script>
 
 <style>
-  @media screen and (max-width: 480px)  {
+  @media screen and (max-width: 1024px)  {
     .ali{
       position: absolute;
-      left: 20px;
       top:850px
+    }
+    .shadow{
+      width: 90px;
     }
   }
 </style>

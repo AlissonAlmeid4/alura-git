@@ -10,7 +10,7 @@
     </div>
 
     <div class="q-pa-md row justify-center">
-        <img src="../photos/grupo.png"  width="400px" height="200px" alt="" srcset="">
+        <img src="../photos/grupo.png"  width="400px" height="170px " alt="" srcset="">
     </div>
     <div class="mensagem">
         <div class="text-subtitle1">
