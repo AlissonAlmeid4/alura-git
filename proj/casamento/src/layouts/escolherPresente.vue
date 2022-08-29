@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .mensagem{
   text-align: center;
   padding: 12px;

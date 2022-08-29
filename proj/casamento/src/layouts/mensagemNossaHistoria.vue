@@ -46,7 +46,7 @@ Foi ai que percebi, ele estava falando sério.
 <strong>- Achei que estivesse brincando!</strong>
 <br>
     <div class="q-py-md column items-center">
-        <img src="../photos/CASALARVORE.jpg"  width="380px auto" height="700px" alt="" >
+        <img src="../photos/CASALARVORE.jpg"  width="380px auto" height="600px" alt="" >
     </div>
 <br>
 “Ele é meu melhor amigo, não quero estragar o que temos se isso der errado! Não quero estragar uma amizade de 7 anos”. Pensei.
@@ -79,7 +79,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .mensagem{
   text-align: center;
   padding: 12px;

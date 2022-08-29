@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .crono{
   text-align: center;
   padding: 12px;

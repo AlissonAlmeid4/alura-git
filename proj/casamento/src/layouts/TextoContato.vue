@@ -5,9 +5,9 @@
 
   <div class="q-ma-md">
     <div class="column items-center" style="height: 150px">
-      <div class="col col-md-8 ">
+      <div class="col col-md-8">
         <div class="q-pa-md shadow-up-2">
-        <img src="../photos/ela.jpg" style="height: 300px" >
+          <img src="../photos/ela.jpg" style="height: 300px" />
         </div>
         <pre>
 <strong>Ingrid Suellen</strong>
@@ -27,9 +27,9 @@ alegria e saudades por onde passa!
         </pre>
       </div>
       <div class="col ali col-md-8">
-      <div class="q-pa-md shadow-up-2">
-      <img src="../photos/Eu.png" style="height: 300px" >
-      </div>
+        <div class="q-pa-md shadow-up-2">
+          <img src="../photos/Eu.png" style="height: 300px" />
+        </div>
 
         <pre>
 <strong>Alisson Almeida</strong>
@@ -54,19 +54,17 @@ ama feliz!
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-  @media screen and (max-width: 1024px)  {
-    .ali{
-      position: absolute;
-      top:850px
-    }
-    .shadow{
-      width: 90px;
-    }
+<style scoped>
+@media screen and (max-width: 1024px) {
+  .ali {
+    position: absolute;
+    top: 850px;
   }
+  .shadow {
+    width: 90px;
+  }
+}
 </style>

@@ -2,7 +2,7 @@
      <div class="q-pa-md">
       <div class="q-pa-md">
         <div class="mensagem ">
-            <div class="text-h4">FOTOS RECENTES</div>
+            <div class="mensagem text-h4 ">FOTOS RECENTES</div>
         </div>
       </div>
 
@@ -40,6 +40,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .mensagem{
+    text-align: center;
+  }
 </style>
+
