@@ -1,26 +1,26 @@
 <template>
-  <div class="q-pa-md">
+  <div class="">
     <div class="q-pa-md">
       <div class="mensagem">
         <div class="mensagem text-h4">FOTOS RECENTES</div>
       </div>
     </div>
 
-    <div class="q-gutter-md row justify-center">
+    <div class="fotos q-gutter-md row justify-center ">
       <div class="col-4">
-        <q-img src="../photos/entradaSitio.jpg" no-native-menu> </q-img>
+        <img src="../photos/entradaSitio.jpg" alt="" />
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/salao.jpg" no-native-menu> </q-img>
+        <img src="../photos/salao.jpg" no-native-menu />
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/lago.png" no-native-menu> </q-img>
+        <img src="../photos/lago.png"/>
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/rampa.png" no-native-menu> </q-img>
+        <img src="../photos/rampa.png" />
       </div>
     </div>
   </div>
@@ -35,8 +35,19 @@ export default {};
   text-align: center;
 }
 img {
-  height: 400px;
-  width: 150px;
+  height: 350px;
+  width: 505px;
 }
+@media screen and (max-width: 480px) {
+  img {
+    width: 300px;
+    height: 200px;
 
+  }
+  .fotos{
+    justify-content: left;
+    display: inline;
+  }
+
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <div class="mensagem">
-      <div class="text-h2">SUGESTÃO DE PRESENTES</div>
+      <div class="text-h2">SUGESTÃO DE PRESENTE</div>
     </div>
     <div class="mensagem column items-center">
       <div class="text-subtitle1">
