@@ -1,0 +1,11 @@
+  data () {
+    return {
+      modoEscuro: false
+    }
+  },
+  methods: {
+    alterarModo () : void {
+      this.modoEscuro = !this.modoEscuro
+      this.$emit('aoAlterarModo', this.modoEscuro)
+    }
+  },
