@@ -16,11 +16,11 @@
       </div>
 
       <div class="col-4">
-        <img src="../photos/lago.png"/>
+        <img src="../photos/lago.jpg"/>
       </div>
 
       <div class="col-4">
-        <img src="../photos/rampa.png" />
+        <img src="../photos/rampa.jpg" />
       </div>
     </div>
   </div>
