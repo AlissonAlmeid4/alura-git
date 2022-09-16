@@ -1,4 +1,5 @@
 <template>
+  <EsperaCoracao/>
   <MensagemNossaHistoria/>
 
   <FooTer/>
@@ -8,9 +9,10 @@
 import { defineComponent } from 'vue'
 import MensagemNossaHistoria from 'src/layouts/mensagemNossaHistoria.vue';
 import FooTer from 'src/layouts/FooTer.vue';
+import EsperaCoracao from 'src/layouts/EsperaCoracao.vue';
 
 export default defineComponent({
     name: "AboutPage",
-    components: { MensagemNossaHistoria, FooTer }
+    components: { MensagemNossaHistoria, FooTer, EsperaCoracao }
 })
 </script>

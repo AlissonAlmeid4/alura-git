@@ -1,4 +1,5 @@
 <template>
+  <EsperaCoracao/>
 <div class="q-pa-md column items-center">
     <ListaPresenca></ListaPresenca>
 </div>
