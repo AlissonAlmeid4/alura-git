@@ -6,21 +6,21 @@
       </div>
     </div>
 
-    <div class="fotos q-gutter-md row justify-center ">
+    <div class="fotos q-gutter-md row justify-center">
       <div class="col-4">
-        <img src="../photos/entradaSitio.jpg" alt="" />
+        <q-img src="../photos/entradaSitio.jpg" no-native-menu />
       </div>
 
       <div class="col-4">
-        <img src="../photos/salao.jpg" no-native-menu />
+        <q-img src="../photos/salao.jpg" no-native-menu />
       </div>
 
       <div class="col-4">
-        <img src="../photos/lago.jpg"/>
+        <q-img src="../photos/lago.jpg" no-native-menu />
       </div>
 
       <div class="col-4">
-        <img src="../photos/rampa.jpg" />
+        <q-img src="../photos/rampa.jpg" no-native-menu />
       </div>
     </div>
   </div>
@@ -34,20 +34,18 @@ export default {};
 .mensagem {
   text-align: center;
 }
-img {
-  height: 350px;
-  width: 505px;
-}
+
 @media screen and (max-width: 480px) {
-  img {
+  .q-img {
     width: 300px;
     height: 200px;
-
   }
-  .fotos{
+  .col-4:last-child {
+    margin-bottom: 100px;
+  }
+  .fotos {
     justify-content: left;
     display: inline;
   }
-
 }
 </style>

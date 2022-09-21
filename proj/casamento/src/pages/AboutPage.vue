@@ -7,7 +7,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import MensagemNossaHistoria from 'src/layouts/mensagemNossaHistoria.vue';
+import MensagemNossaHistoria from 'src/layouts/mensagemNossaHistoria';
 import FooTer from 'src/layouts/FooTer.vue';
 import EsperaCoracao from 'src/layouts/EsperaCoracao.vue';
 
