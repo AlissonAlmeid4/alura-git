@@ -33,7 +33,6 @@
 
     <q-page-container>
       <router-view />
-      <FooTer />
     </q-page-container>
 
     <q-page-scroller
@@ -49,50 +48,49 @@
 <script>
 import { defineComponent, ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
-import FooTer from "./FooTer.vue";
 
 const linksList = [
   {
     title: "Inicio",
     caption: "Bem-Vindo",
     icon: "home",
-    link: "/",
+    link: "/AlissonAlmeid4/#",
   },
   {
     title: "Sobre",
     caption: "Nossa História",
     icon: "favorite",
-    link: "/#/about",
+    link: "/AlissonAlmeid4/#/about",
   },
   {
     title: "Presentes",
     caption: "Sujestão de Presente",
     icon: "link",
-    link: "/#/present",
+    link: "/AlissonAlmeid4/#/present",
   },
   {
     title: "Lista de presença",
     caption: "Confirme sua presença",
-    icon: "list",
-    link: "/#/gift",
+    icon: "record_voice_over",
+    link: "/AlissonAlmeid4/#/gift",
   },
   {
     title: "O Casamento",
     caption: "Como chegar",
     icon: "map",
-    link: "/#/maps",
+    link: "/AlissonAlmeid4/#/maps",
   },
   {
     title: "Contato",
     caption: "Fale com a Gente",
     icon: "public",
-    link: "/#/contact",
+    link: "/AlissonAlmeid4/#/contact",
   },
   {
     title: "Apoie-nos",
     caption: "Transferencia",
     icon: "$",
-    link: "/#/transfer",
+    link: "/AlissonAlmeid4/#/transfer",
   },
 ];
 
@@ -101,7 +99,6 @@ export default defineComponent({
 
   components: {
     EssentialLink,
-    FooTer,
   },
 
   setup() {
