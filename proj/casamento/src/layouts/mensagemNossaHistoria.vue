@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md row justify-center">
+  <div class="desabilitar q-pa-md row justify-center">
     <div class="mensagem">
       <div class="text-h4">NOSSA HISTÓRIA!</div>
       <div class="text-h6">
@@ -33,11 +33,17 @@ iframe {
   .mensagem {
     padding: 0px;
   }
+  .livro,
+  .desabilitar {
+    padding: 0;
+  }
   img {
     width: 330px;
   }
   iframe {
-    margin-top: 60px;
+    margin-top: 20px;
+    width: 380px;
+    height: 583px;
   }
 }
 </style>
