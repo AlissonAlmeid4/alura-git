@@ -1,5 +1,5 @@
 <template>
-  <div class="desabilitar q-pa-md row justify-center">
+  <div class="desabilitar q-pa-xs row justify-center">
     <div class="mensagem">
       <div class="text-h4">NOSSA HISTÓRIA!</div>
       <div class="text-h6">
@@ -10,7 +10,7 @@
     <div class="livro q-pa-md row justify-center">
       <iframe
         width="940px"
-        height="783px"
+        height="683px"
         src="https://www.yumpu.com/xx/embed/view/nM45Oo1lyvz0jhFf"
         frameborder="0"
         allowfullscreen="true"
@@ -24,11 +24,8 @@
   text-align: center;
   padding: 12px;
   color: rgba(0, 0, 0, 0.7);
-  position: absolute;
 }
-iframe {
-  margin-top: 20px;
-}
+
 @media screen and (max-width: 480px) {
   .mensagem {
     padding: 0px;
@@ -41,8 +38,7 @@ iframe {
     width: 330px;
   }
   iframe {
-    margin-top: 20px;
-    width: 380px;
+    width: 360px;
     height: 583px;
   }
 }
