@@ -1,0 +1,52 @@
+.barramenu{
+    background-color: rgba(175, 206, 172, 0.911);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.item{
+    padding: 25px;
+}
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-links  button{
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.subcategoria2 button {
+    background-color: white;
+}
+.nav-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.nav-links li{
+    list-style-type: none;
+}
+.nav-links a li{
+    text-decoration: none;
+    color: white;
+}
+
+
+.btnlogin{
+    cursor: pointer;
+}
+
+/*Design do logo*/
+.logo > img{
+    margin-top: 3%;
+    width: 35%;
+    height: 10%;
+}
+

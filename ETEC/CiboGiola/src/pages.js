@@ -22,39 +22,20 @@ $(document).ready(function(){
 
            
 // Login
-function entrar(){
-    var x = document.getElementById("Login").value;
-    var y = document.getElementById("Senha").value;
 
-    a = "joao";
-    b = "1234";
-
-    c = "daniel";
-    d = "456";
-
-    if(x == a && y == b ){
-        alert("Login efetuado");
-        window.location.href = "intranetFunc.html";
-    } else if(x == c && y == d){
-        alert("Acesso efetuado")
-        window.location.href = "intranetCli.html";
-    }else{
-        alert("Email ou senha errada");
-        location.reload();
-    }
-}
 function cadastrar(){
     window.location.href = "cadastro.html";
 }
 
 function sair(){
-        alert("Até logo !")
-        window.location.href = "inicio.html";
+        //alert("Até logo !")
+        window.location.href = "logoff.php";
     }
     function esquecisenha(){
-        window.location.href = "RecSenha.html";
+        window.location.href = "RecSenha.php";
 
     }
+    
 
 
 /*Função para sumir/aparecer barra de menu*/

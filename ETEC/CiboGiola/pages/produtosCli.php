@@ -7,79 +7,42 @@
     <title>Cibo & Giola</title><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="stylesheet" href="..\style\estilo.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="barramenu">
-        <div class="logo">
-            <img src="Imgs/LogoG&C.png" alt="Logo">>
-        </div>
-        <ul class="nav-links">
-            <a href="inicio.html"><li class="item">Início</li></a>
-            <a href="galeria.html" ><li class="item">Galeria</li></a>
-            <a href="produtos.html" style="background-color: rgba(175, 206, 172, 0.842);"><li class="item">Produtos</li></a>
-            <a href="faleConosco.html"><li class="item">Contato</li></a>
-            <li class="item"><button type="button" class="btnlogin" onclick="login()">Login</button></li>
-        </ul>
-        <div class="burger">
-            <div class="linha1"></div>
-            <div class="linha2"></div>
-            <div class="linha3"></div>
-        </div>
-        </nav>
+<?php include('navbar.php'); ?>
 
 <div class="fundoProduto">
     <div class="categoria">
         <h3>Cárdapio</h3>
      <nav class="lista">
         <nav class="lista">
-            <button onclick="viewsub2()">Bruschetta</button>
-         
-                <div id="subcategoria2" class="subcategoria">
-                    <ul>
-                        <li>R$ 19,99  -  Bruschetta Tradicional<button type="button" onclick="addBrusctra()">Add/Remover</button></li>
+<?php
+    @session_start();
+    if(isset($_SESSION['msg'])){
+        echo "<p class=alert> $_SESSION</p>";
+        unset($_SESSION['msg']);
+    }
+require('connect.php');
+$subcategorias = mysqli_query($con, "Select * from `tb_produtos` GROUP BY subcategoria ORDER BY subcategoria ");
+$produto = mysqli_query($con, "Select * from `tb_produtos` ");
 
-                        <li>R$ 32,50  -  Bruschetta de Brie<button type="button" onclick="addBruscbrie()">Add/Remover</button></li>
 
-                        <li>R$ 51,30  -  Bruschetta Mussarela<button type="button" onclick="addBruscmuss()">Add/Remover</button></li>
-
-                    </ul>
-                </div>  
-          </nav>    
-        <button onclick="viewsub1()">Macarrões</button>
-     
-            <div id="subcategoria1" class="subcategoria">
-                <ul>
-                    <li>R$ 19,99  -  Macarrão Espaguete<button type="button" onclick="addMacEsp()">Add/Remover</button></li>
-                    
-                    <li>R$ 32,50  -  Macarrão Mussarela<button type="button" onclick="addMacMuss()">Add/Remover</button></li>
-                    
-                    <li>R$ 51,30  -  Macarrão Cachos<button type="button" onclick="addMacCac()">Add/Remover</button></li>
-                </ul>
-            </div>  
-      </nav>
-      <nav class="lista">
-        <button onclick="viewsub4()">Pizza</button>
-     
-            <div id="subcategoria4" class="subcategoria">
-                <ul>
-                    <a href=""><li>Pizza Mussarela</li></a>
-                    <a href=""><li>Pizza Frango/Catupiry</li></a>
-                    <a href=""><li>Pizza Portuguesa</li></a>
-                </ul>
-            </div>  
-      </nav>
-      <nav class="lista">
-        <button onclick="viewsub3()">Risoto</button>
-            <div id="subcategoria3" class="subcategoria">
-                <ul>
-                    <a href=""><li>Risoto de Cupim</li></a>
-                    <a href=""><li>Risoto Carne Bovina</li></a>
-                    <a href=""><li>Risoto Filé Mignon</li></a>
-                </ul>
-            </div>  
-      </nav>
+while($produtos = mysqli_fetch_array($produto)){
+    while($subcategoria = mysqli_fetch_array($subcategorias)){
+        echo "<button onclick=viewsub2()>$subcategoria[subcategoria]</button>";
+        echo "<div id=subcategoria2 class=subcategoria>";
+        echo "<ul>";
+        echo "<li>R$ $produtos[valorPrato]  -  $produtos[nomePrato]<button type=button onclick=addBrusctra()>Add/Remover</button></li>";
+        echo "<li>R$ $produtos[valorPrato]  -  $produtos[nomePrato]<button type=button onclick=addBrusctra()>Add/Remover</button></li>";
+        echo "<li>R$ $produtos[valorPrato]  -  $produtos[nomePrato]<button type=button onclick=addBrusctra()>Add/Remover</button></li>";
+        echo "</ul>";
+        echo" </div>  ";
+    }
+}
+?>
+</nav>    
 </div>
 
 
@@ -130,31 +93,9 @@
 
 
 <div id="fundologin">
-    <div>
-       <img src="../CiboGiola/Imgs/x.png" class="x" onclick="login()">
-    </div>
-
-   <div class="container">
-       <div class="input">
-           <div class="logoLogin">
-               <img src="./Imgs/LogoG&C.png">
-           </div>
-               <h4>LOGIN</h4>
-           <p>
-               <input type="text" name="Login" id="Login" placeholder="Email">
-          <p>
-       </p>
-            <input type="password" name="Senha" id="Senha" placeholder="Senha">
-           </p>
-           <button type="button" class="btnesqueci" onclick="esquecisenha()">Esqueci minha senha</button>
-           <p>
-               <button type="button" class="btentrar" onclick="entrar()">Entrar</a></button>
-           <button type="button" class="btncadastrar" onclick="cadastrar()" >Cadastre-se</button>
-           </p>
-       </div>
-       </div>
+    <?php include('fundoLogin.php'); ?>
 </div> 
-<script src="src/pages.js"></script>
+<script src="..\src\pages.js"></script>
 <script>
     $('#fundologin').fadeOut(0);
     $('#subcategoria1').fadeOut(0);

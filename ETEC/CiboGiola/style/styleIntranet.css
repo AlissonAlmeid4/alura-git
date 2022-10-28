@@ -12,13 +12,6 @@ body{
     background-position: top;
     background-attachment: fixed;
 }
-.barramenu{
-    background-color: rgba(175, 206, 172, 0.911);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 35px;
-}
 
 a{
     text-decoration: none;
@@ -60,26 +53,7 @@ h3{
 
 
 /*Barra de menus*/
-.barralateral:hover{
-    background-color: rgba(175, 206, 172, 0.911);
-    width: 20%;
-    left: 20%;
-    display: flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-}
- .barralateral{
-    position: absolute;
-    top: 5.1vh;
-    left: 5px;
-    width: 2vh;
-    height: 94vh;
-    background-color: inherit;
-    transform: translateX(-100%);
-    transition: 0.5s;
-    background-color: rgba(175, 206, 172, 0.911);
-}
+
 ul{
     display: flex;
     flex-direction: column;
@@ -111,11 +85,3 @@ ul{
     margin-left: 45vh;
 }
 
-.formulario {
-    margin-left: 30px;
-    margin-top: 5px;
-    background-color: white;
-    width: 50%;
-    padding: 20px;
-    margin-left: 26%;
-}

@@ -1,3 +1,5 @@
+<?php require('sec.php') ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,14 +11,14 @@
 </head>
 <body>
 <nav class="barramenu">
-    <div class="logo" class="nav-links">
-        <img src="Imgs/LogoG&C.png" alt="Logo">    
+    <div class="logo">
+        <img src="Imgs/LogoG&C.png" alt="Logo">
     </div>
     <div class="barralateral">
         <ul>
             <li class="titulo">Produtos</li>
-            <li class="subtitulo"><a href="../CiboGiola/cadProd.html">Cadastrar Produtos</a></li>
-            <li class="subtitulo"><a href="../CiboGiola/cadFunc.html">Cadastrar Funcionários</a></li>
+            <li class="subtitulo"><a href="../CiboGiola/cadUsuario.html">Meu Cadastro</a></li>
+            <li class="subtitulo"><a href="">Carrinho de compra</a></li>
        
             <li><button type="button" class="btnsair" onclick="sair()">Sair</button></li>
         </ul>

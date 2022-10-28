@@ -1,0 +1,11 @@
+.formulario{
+   display: flex;
+}
+
+.img img{
+    width: 250px;
+    height: 200px;
+}
+.img{
+    padding-right: 20px;
+}

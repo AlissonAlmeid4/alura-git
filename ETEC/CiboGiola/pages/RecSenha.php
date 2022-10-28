@@ -5,32 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperação senha</title>
-    <link rel="stylesheet" href="./style/estilo.css">
-
+    <link rel="stylesheet" href="/CiboGiola/style/estilo.css">
 </head>
 <body class="RecBody">
-    <nav class="barramenu">
-        <div class="logo">
-            <img src="Imgs/LogoG&C.png" alt="Logo">
-        </div>
-        <ul class="nav-links">
-            <a href="inicio.html"><li class="item">Início</li></a>
-            <a href="galeria.html"><li class="item">Galeria</li></a>
-            <a href="produtos.html"><li class="item">Produtos</li></a>
-            <a href="faleConosco.html"><li class="item">Contato</li></a>
-            <a href="RecSenha.html"><li class="item"  style="background-color: rgba(175, 206, 172, 0.842);">Recuperar</li></a>
-        </ul>
-        <div class="burger">
-            <div class="linha1"></div>
-            <div class="linha2"></div>
-            <div class="linha3"></div>
-        </div>
-    </nav>
     <div class="RecContainer">
         <div class="Recinput">
             <h3 class="RecH">Bem vindo</h3>
             <p>
-                <img class="RecSenha"  src="./Imgs/LogoG&C.png" alt="">
+                <img class="RecSenha"  src="/CiboGiola/Imgs/LogoG&C.png" alt="">
             </p>
             <h3 class="RecH">Recupere sua senha</h3>
         
@@ -52,11 +34,7 @@
     </div>
     </div>
     </div>
- 
-
     
-</div> 
-
     <script>
         function recuperar(){
 
@@ -65,5 +43,9 @@
 
 
     </script>
+
+
+
+
 </body>
 </html>
