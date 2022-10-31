@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionarios</title>
      <link rel="stylesheet" href="..\style\styleIntranet.css">
-          <link rel="stylesheet" href="..\style\produtos.css">
 
 
 </head>
@@ -16,7 +15,7 @@
     <?php 
         @session_start();
         if(isset($_SESSION['msg'])){
-            echo "<p class=alert> $_SESSION</p>";
+            echo "<p class=alert> $_SESSION[msg]</p>";
             echo var_dump($_POST);
             unset($_SESSION['msg']);
         }

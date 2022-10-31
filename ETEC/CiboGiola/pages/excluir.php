@@ -1,10 +1,10 @@
 <?php
-$codProd = $_GET['cod'];
+$codFunc = $_GET['cod'];
 require('connect.php');
 extract($_POST);
-    if(mysqli_query($con, "DELETE FROM `tb_produtos`
-                            WHERE `tb_produtos`.`codProd` = '$codProd';")){
-        header("location: produtos.php");
+    if(mysqli_query($con, "DELETE FROM `tb_funcionarios`
+                            WHERE `tb_funcionarios`.`cod_func` = '$codFunc';")){
+        header("location: funcionarios.php");
     }else{
         echo "Erro ao excluir!";
     }

@@ -1,65 +1,49 @@
+<?php require('sec.php') ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cibo & Giola</title><link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="..\style\estilo.css">
+    <title>Produtos</title>
+     <link rel="stylesheet" href="..\style\styleIntranet.css">
+
 
 </head>
 <body>
-        <?php include('navbar.php'); 
-        ?>
-        <?php
-    @session_start();
-    if(isset($_SESSION['msg'])){
-        echo"<p class=alert> $_SESSION[msg]</p>";
-        unset($_SESSION['msg']);
+    <?php include('barraLateral.php') ?>
+    <?php 
+        @session_start();
+        if(isset($_SESSION['msg'])){
+            echo "<p class=alert> $_SESSION</p>";
+            echo var_dump($_POST);
+            unset($_SESSION['msg']);
+        }
+     require('connect.php');
+     $funcionalidade = mysqli_query($con, "Select * from `tb_funcionalidades`");
+        while($funcionalidades = mysqli_fetch_array($funcionalidade)){
+        echo "<div class=formulario>";
+         echo "<div class=dados>";
+        echo "<p> Cód. $funcionalidades[cod]  - Link.  $funcionalidades[link]</p>";
+        echo "<p> Titulo texto 1º: $funcionalidades[titulotexto1] </p>";
+        echo "<p> Texto 1º: $funcionalidades[texto1]</p>";
+        echo "<p> Titulo texto 2º: $funcionalidades[titulotexto2] </p>";
+        echo "<p> Texto 2º: $funcionalidades[texto2]</p>";
+        echo "<div class=alterarExcluir>";
+        echo "<p> <a href =alterInicio.php?cod=$funcionalidades[cod]>Alterar</a>
+             <a href =javascript:confirmar($funcionalidades[cod])>Excluir</a></p>";
+        echo "</div>";
+        echo "</div>";
+        echo "</div>";
     }
-?>
-
-<div class="caixavideo">
-    <div class="video">
-        <iframe width="65%" height="430" src="https://www.youtube.com/embed/C_9klgP0-fA" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="caixartextosuperior">
-    <div class="caixatexto">
-        <div class="caixa1">
-            <p>
-                Texto texto
-            </p>
-            <p>
-                Nossa comida é muito boa, é espetacular, é sensacional
-            </p>
-        </div>
-        <div class="caixa2">
-            <p>
-                Texto texto
-            </p>
-            <p>
-                Nossa comida é muito boa, é espetacular, é sensacional
-            </p>
-        </div>
-    </div>
-</div>
-
- <div id="fundologin">
-    <?php include('fundoLogin.php'); ?>
-</div> 
-
-<script src="..\src\pages.js"></script>
-<script>
-    $('#fundologin').fadeOut(0);
-    
-    var x = document.getElementById("fundologin");
-    x.style.display = 'none';
-    
+    ?>
+ <script>
+    function confirmar(codigo) {
+        resposta = confirm("Deseja excluir o registro "+codigo+"?");
+        if(resposta == true){
+            window.location = "excluirInicio.php?cod="+codigo;
+        }
+    }
 </script>
 </body>
 </html>

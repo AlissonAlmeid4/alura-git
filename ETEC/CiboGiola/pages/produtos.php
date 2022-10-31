@@ -17,6 +17,7 @@
         @session_start();
         if(isset($_SESSION['msg'])){
             echo "<p class=alert> $_SESSION</p>";
+            echo var_dump($_POST);
             unset($_SESSION['msg']);
         }
      require('connect.php');
@@ -43,7 +44,7 @@
     function confirmar(codigo) {
         resposta = confirm("Deseja excluir o registro "+codigo+"?");
         if(resposta == true){
-            window.location = "excluir.php?cod="+codigo;
+            window.location = "excluirProduto.php?cod="+codigo;
         }
     }
 </script>

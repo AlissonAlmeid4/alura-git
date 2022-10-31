@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 28-Out-2022 às 22:11
+-- Tempo de geração: 31-Out-2022 às 18:35
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -27,6 +27,54 @@ USE `bd_cibogiola`;
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `tb_categoria`
+--
+
+DROP TABLE IF EXISTS `tb_categoria`;
+CREATE TABLE IF NOT EXISTS `tb_categoria` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `subcategoria` varchar(22) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `tb_categoria`
+--
+
+INSERT INTO `tb_categoria` (`id`, `subcategoria`) VALUES
+(1, 'Bruschetta'),
+(2, 'Macarrões'),
+(3, 'Pizza'),
+(4, 'Risoto'),
+(6, 'teste1');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_funcionalidades`
+--
+
+DROP TABLE IF EXISTS `tb_funcionalidades`;
+CREATE TABLE IF NOT EXISTS `tb_funcionalidades` (
+  `cod` int(11) NOT NULL AUTO_INCREMENT,
+  `link` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `titulotexto1` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
+  `texto1` varchar(1500) COLLATE utf8_unicode_ci NOT NULL,
+  `titulotexto2` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
+  `texto2` varchar(1500) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`cod`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `tb_funcionalidades`
+--
+
+INSERT INTO `tb_funcionalidades` (`cod`, `link`, `titulotexto1`, `texto1`, `titulotexto2`, `texto2`) VALUES
+(1, 'https://www.youtube.com/embed/C_9klgP0-fA', 'Cibo & Giola é Sucesso Nacional', '\"Essa comida é muito boa, é espetacular, é sensacional\" foi o que eles dissera, não tem duvidas que nos dedicamos magistralmente, que nos diferenciamos pela nossa dedicação. Mas receber esse retorno de nossos clientes é algo fantástico, eu Alisson e toda nossa equipe(Chaves do 8, Madruga, Clotilde do 13 e dona Florinda) estamos muito alegres por essa vitória.\r\n', 'O Sucesso ainda não é o fim', 'Nossa comida é muito boa, é espetacular, é sensacional2\r\n');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `tb_funcionarios`
 --
 
@@ -41,16 +89,15 @@ CREATE TABLE IF NOT EXISTS `tb_funcionarios` (
   `senha` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
   `funcao` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`cod_func`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tb_funcionarios`
 --
 
 INSERT INTO `tb_funcionarios` (`cod_func`, `nome`, `sexo`, `data`, `celular`, `email`, `senha`, `funcao`) VALUES
-(1, 'administrador', '', '', '', 'admin@etec.com', '21232f297a57a5a743894a0e4a801fc3', 'administrador'),
-(9, 'João Psor', 'Masculino', '1977/6/5', '11999995555', 'joao@etec.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Atendente'),
-(10, 'teste', 'Feminino', '1900/2/1', '11992325271', 'alicia@email.com', '81dc9bdb52d04dc20036dbd8313ed055', 'RH');
+(1, 'administrador', 'Masculino', '1999-01-20', '11992325271', 'admin@etec.com', '21232f297a57a5a743894a0e4a801fc3', 'administrador'),
+(9, 'João Psor', 'Masculino', '1977-06-05', '11999995555', 'joao@etec.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Atendente');
 
 -- --------------------------------------------------------
 
@@ -69,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `tb_produtos` (
   `tempoPreparo` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
   `valorPrato` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`codProd`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tb_produtos`
@@ -87,8 +134,7 @@ INSERT INTO `tb_produtos` (`codProd`, `imagem`, `nomePrato`, `tipo`, `subcategor
 (10, 'imgs/dd3452cf8c406fbd131b2df0c13b33ae.jpg', 'Pizza Portuguesa', 'Salgado', 'pizza', 'A origem da pizza é disputada por egípcios, hebreus e outros povos, mas uma coisa ninguém contesta: a versão italiana, especialmente a da cidade de Nápoles, é a mais perfeita! Foi nessa região que foram desenvolvidos os melhores sabores e técnicas de preparo. A pizza napolitana também é conhecida como margherita. Isso porque em 1889, quando a rainha da Itália Margherita de Savoia visitou a cidade, o pizzaiolo Raffaele Esposito criou uma pizza em homenagem a ela. Ele usou três ingredientes simples, mas que representavam as cores da bandeira da Itália: tomate, muçarela e manjericão.', '30', '51,30'),
 (11, 'imgs/3e42c4b62046562ebcef954558c9168e.jpg', 'Risoto de Cupim', 'Salgado', 'risoto', 'O risoto é um prato originário da região da Lombardia que surgiu no século XI. No sentido literal significa “pequeno arroz”. Com o passar do tempo a receita foi se popularizando em todo o país. Existem várias teorias sobre como o risoto foi criado, porém todas envolvem o artista Valerius de Flanders, mestre na fabricação de vidro e responsável pelos vitrais da catedral de Milão. Uma das hipóteses diz que o artista usava o açafrão para criar uma pigmentação amarelada na confecção dos vitrais e que, sem querer, deixou cair um pouco do pigmento em sua comida.', '30', '19,99'),
 (12, 'imgs/cec106be2be4c14173feb33c63b2f9ce.jpg', 'Risoto Carne Bovina', 'Salgado', 'risoto', 'O risoto é um prato originário da região da Lombardia que surgiu no século XI. No sentido literal significa “pequeno arroz”. Com o passar do tempo a receita foi se popularizando em todo o país. Existem várias teorias sobre como o risoto foi criado, porém todas envolvem o artista Valerius de Flanders, mestre na fabricação de vidro e responsável pelos vitrais da catedral de Milão. Uma das hipóteses diz que o artista usava o açafrão para criar uma pigmentação amarelada na confecção dos vitrais e que, sem querer, deixou cair um pouco do pigmento em sua comida.', '30', '32,50'),
-(13, 'imgs/e2aabc8e4b0aba025ccfa8f71f300756.jpg', 'Risoto File Mignon', 'Salgado', 'risoto', 'O risoto é um prato originário da região da Lombardia que surgiu no século XI. No sentido literal significa “pequeno arroz”. Com o passar do tempo a receita foi se popularizando em todo o país. Existem várias teorias sobre como o risoto foi criado, porém todas envolvem o artista Valerius de Flanders, mestre na fabricação de vidro e responsável pelos vitrais da catedral de Milão. Uma das hipóteses diz que o artista usava o açafrão para criar uma pigmentação amarelada na confecção dos vitrais e que, sem querer, deixou cair um pouco do pigmento em sua comida.', '30', '51,30'),
-(15, 'imgs/cdfbf51d73aa1e364edca59b29863f50.jpg', 'Prato doce', 'Doce', 'risoto', 'teste descricao', '30', '51,30');
+(13, 'imgs/e2aabc8e4b0aba025ccfa8f71f300756.jpg', 'Risoto File Mignon', 'Salgado', 'risoto', 'O risoto é um prato originário da região da Lombardia que surgiu no século XI. No sentido literal significa “pequeno arroz”. Com o passar do tempo a receita foi se popularizando em todo o país. Existem várias teorias sobre como o risoto foi criado, porém todas envolvem o artista Valerius de Flanders, mestre na fabricação de vidro e responsável pelos vitrais da catedral de Milão. Uma das hipóteses diz que o artista usava o açafrão para criar uma pigmentação amarelada na confecção dos vitrais e que, sem querer, deixou cair um pouco do pigmento em sua comida.', '30', '51,30');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

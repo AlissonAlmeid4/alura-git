@@ -12,11 +12,11 @@ if($busca->num_rows ==1){
         $_SESSION['nome'] = $contato['nome'];
         $target = "location:..\pages\intranetFunc.php";
     }else{
-        $target = "location:inicio.php";
+        $target = "location:index.php";
         $msg = "Email ou senha Invalido";
     }
 }else{
-    $target = "location:..\pages\inicio.php";
+    $target = "location:..\pages\index.php";
     $msg = "Email ou senha Invalido";
 }
 echo $email;

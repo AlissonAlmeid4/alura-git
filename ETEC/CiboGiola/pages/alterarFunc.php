@@ -28,27 +28,31 @@
         $funcionario = mysqli_fetch_array($busca);
     ?>
 
-    <form action="alterarFunc.act.php" method="post" class="formulario" enctype="multipart/form-data">
+    <form action="alterarFunc.act.php" method="post" class="formulario" >
         <h3>Preencha o formulário do Funcionário</h3>
         <p>
-            
-            <input type="text" name="codFunc" value="<?php echo $funcionario['cod_func']?>" >
+            <input type="hidden" name="codFunc" value="<?php echo $funcionario['cod_func']?>" >
+            Codigo Contato <?php echo $funcionario['cod_func']; ?>
+        </p>
+        
+        <p>    
             <label for="txtNome" >Nome completo:</label>
             <input type="text" name="nome" id="txtNome" value="<?php echo $funcionario['nome']?>">
         </p>
        <p>
-            <label for="radioMasculino"> Tipo:</label>
-            <input type="radio" name="sexo" id="radioMasculino" value="Masculino"
-                       <?php echo ($funcionario['sexo'] == "Masculino") ? "checked" : null; ?>/><label for="radioMasculino">Masculino</label>
+            <label for="radioMasc"> Tipo:</label>
+            <input type="radio" name="sexo" id="radioMasc" value="Masculino"
+                       <?php echo ($funcionario['sexo'] == "Masculino") ? "checked" : null; ?>/><label for="radioMasc">Masculino</label>
 
-           <input type="radio" name="sexo" id="radioFeminino" value="Feminino"
-                       <?php echo ($funcionario['sexo'] == "Feminino") ? "checked" : null; ?>/><label for="radioFeminino">Feminino</label>
+           <input type="radio" name="sexo" id="radioFem" value="Feminino"
+                       <?php echo ($funcionario['sexo'] == "Feminino") ? "checked" : null; ?>/><label for="radioFem">Feminino</label>
       
         </p>
         <p>
             <label for="nascto" >Data de Nascimento:</label>
-            <select name="ano" id="nascto">
-            <option value="false"></option>
+            <input type="date" name="data" value="<?php echo $funcionario['data']; ?>" >
+            <!-- <select name="ano" id="nascto" >
+            <option  ></option>
                 <script>
                     for(ano=1900;ano<=2022;ano++){
                         document.write("<option value="+ano+">"+ano+"</option>");
@@ -70,7 +74,7 @@
                                 document.write("<option value="+dia+">"+dia+"</option>");
                             }
                         </script>
-                    </select>
+                    </select> -->
         </p>
         <p>
             <label for="txtCelular">Celular:</label>
@@ -95,10 +99,13 @@
 
         <p>
             <input type="submit" value="Gravar">
+            <a href="funcionarios.php">Voltar</a>
+
         </p>
     </form>
     <script>
-         $('.txtTelefone').mask('(00)00000-0000');
+
+        $('.txtTelefone').mask('(00)00000-0000');
         $('.txtCep').mask('00000-000');
         $('.txtCpf').mask('000.000.000-00');
         $('.celular').mask('(00)00000-0000');

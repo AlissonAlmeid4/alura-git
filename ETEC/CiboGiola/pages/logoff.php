@@ -3,4 +3,4 @@
 $_SESSION['login'] = false;
 unset($_SESSION['login']);
 session_destroy();
-header("location:..\pages\inicio.php");
+header("location:..\pages\index.php");

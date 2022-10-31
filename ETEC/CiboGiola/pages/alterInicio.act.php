@@ -1,0 +1,19 @@
+<?php
+    var_dump($_POST);
+    extract($_POST);
+    require('connect.php');
+    if(mysqli_query($con, "UPDATE `tb_funcionalidades` SET `cod` = '$cod', 
+                                                        `link` = '$link',
+                                                        `titulotexto1` = '$titulotexto1',
+                                                        `texto1` = '$texto1',
+                                                        `titulotexto2` = '$titulotexto2',
+                                                        `texto2` = '$texto2',
+                            WHERE `tb_funcionalidades`.`cod` = '$cod';")){
+                                $msg = "Alterado com sucesso!";
+                        }else{
+                                $msg = "Erro ao alterar!";
+                        }
+session_start();
+$_SESSION['msg'] = $msg;                        
+//header("location:inicio.php");                         
+

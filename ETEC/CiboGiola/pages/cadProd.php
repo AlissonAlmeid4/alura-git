@@ -41,7 +41,9 @@
         </p>
 
         <p>
-            <label for="subcategoria" >Subcategoria:</label>
+            <label for="subcategoria" >Subcategoria:</label> 
+        </p>    
+        <p>
             <select type="text" name="subcategoria" id="txtSubCategoria">
             <option  value="false"></option>     
                     <option value="Bruschetta">Bruschetta</option>");      
@@ -50,7 +52,6 @@
                     <option value="risoto">Risoto</option>");
             </select>
         </p>
-        <br>
        
         <p>
             <label for="descricao" >Descrição:</label>
@@ -78,6 +79,8 @@
             <!-- <button type="button" ">Enviar</button> -->
         </p>
     </form>
+
     <script src="..\src\pages.js"></script>
+
 </body>
 </html>

@@ -11,21 +11,18 @@ $('.imggrande>img').click(function(){
 function login() {
      $('#fundologin').fadeToggle(1000);
 }
-$(document).ready(function(){
-    $("#inserir").click(function(){
-      var ing = document.getElementById("txtIngredientes").value;
+// $(document).ready(function(){
+//     $("#inserir").click(function(){
+//       var ing = document.getElementById("txtIngredientes").value;
       
-      $("ol").append("<li>" + ing + "</li>" );
+//       $("ol").append("<li>" + ing + "</li>" );
       
-    });
-  });
+//     });
+//   });
 
            
 // Login
 
-function cadastrar(){
-    window.location.href = "cadastro.html";
-}
 
 function sair(){
         //alert("Até logo !")
@@ -35,7 +32,10 @@ function sair(){
         window.location.href = "RecSenha.php";
 
     }
-    
+
+function cadastrarSubcategoria(){
+    $('#cadastrar').fadeToggle(1000);
+}
 
 
 /*Função para sumir/aparecer barra de menu*/

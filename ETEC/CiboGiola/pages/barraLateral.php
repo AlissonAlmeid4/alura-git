@@ -15,9 +15,15 @@
                 <li class="biSubtitulo"><a href="..\pages\produtosCli.php">-- Comprar Produto</a></li>
             </ul>
         </li>
-            <li class="subtitulo"><a href="..\pages\funcionarios.php">Funcionários</a>
-                        <ul>
+        <li class="subtitulo"><a href="..\pages\funcionarios.php">Funcionários</a>
+            <ul>
                 <li class="biSubtitulo"><a href="..\pages\cadFunc.php">-- Cadastrar Funcionário</a></li>
+                
+            </ul>
+        </li>
+        <li class="subtitulo"><a href="..\pages\inicio.php">index Page</a>
+                        <ul>
+                <li class="biSubtitulo"><a href="..\pages\cadInicio.php">-- Cadastrar Funcionário</a></li>
                 
             </ul>
         </li>

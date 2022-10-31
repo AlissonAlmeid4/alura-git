@@ -18,7 +18,7 @@
         unset($_SESSION['msg']);
     }
 require('connect.php');
-$funcionario = mysqli_query($con, "Select * from `tb_funcionarios`");
+$funcionario = mysqli_query($con, "Select * from `tb_funcionarios` ");
 while($funcionarios = mysqli_fetch_array($funcionario)){
 
 echo "<div class=bemvindo>";
