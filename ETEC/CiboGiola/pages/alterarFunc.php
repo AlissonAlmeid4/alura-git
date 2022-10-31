@@ -24,13 +24,15 @@
         <?php
         $codFunc = $_GET['cod'];
         require('connect.php');
-        $busca = mysqli_query($con, "Select * from `tb_funcionarios` where `cod_Func` = '$codFunc'");
+        $busca = mysqli_query($con, "Select * from `tb_funcionarios` where `cod_func` = '$codFunc'");
         $funcionario = mysqli_fetch_array($busca);
     ?>
 
     <form action="alterarFunc.act.php" method="post" class="formulario" enctype="multipart/form-data">
         <h3>Preencha o formulário do Funcionário</h3>
         <p>
+            
+            <input type="text" name="codFunc" value="<?php echo $funcionario['cod_func']?>" >
             <label for="txtNome" >Nome completo:</label>
             <input type="text" name="nome" id="txtNome" value="<?php echo $funcionario['nome']?>">
         </p>

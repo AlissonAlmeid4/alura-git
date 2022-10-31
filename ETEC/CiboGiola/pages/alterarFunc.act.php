@@ -1,17 +1,15 @@
 <?php
-    var_dump($_FILES);
-    extract($_FILES);
+var_dump($_POST);
     extract($_POST);
-        $senha = md5($senha);
 
     require('connect.php');
     if(mysqli_query($con, "UPDATE `tb_funcionarios` SET 
                                     `nome` = '$nome',
                                     `sexo` = '$sexo',
-                                    `data` = '$concat('$ano','/','$mes','/', '$dia')', 
+                                    `data` = 'concat('$ano','/','$mes','/', '$dia')', 
                                     `email` = '$email',
                                     `celular` = '$celular',
-                                    `funcao` = '$funcao',
+                                    `funcao` = '$funcao'
                                     WHERE `tb_funcionarios`.`cod_func` = '$codFunc';")){
                                 $msg = "Alterado com sucesso!";
                         }else{

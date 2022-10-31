@@ -17,6 +17,7 @@
         @session_start();
         if(isset($_SESSION['msg'])){
             echo "<p class=alert> $_SESSION</p>";
+            echo var_dump($_POST);
             unset($_SESSION['msg']);
         }
      require('connect.php');
