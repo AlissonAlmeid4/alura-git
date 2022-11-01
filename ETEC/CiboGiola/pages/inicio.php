@@ -15,7 +15,7 @@
     <?php 
         @session_start();
         if(isset($_SESSION['msg'])){
-            echo "<p class=alert> $_SESSION</p>";
+            echo "<p class=alert> $_SESSION[msg]</p>";
             echo var_dump($_POST);
             unset($_SESSION['msg']);
         }
@@ -24,14 +24,14 @@
         while($funcionalidades = mysqli_fetch_array($funcionalidade)){
         echo "<div class=formulario>";
          echo "<div class=dados>";
-        echo "<p> Cód. $funcionalidades[cod]  - Link.  $funcionalidades[link]</p>";
+        echo "<p> Cód. $funcionalidades[id]  - Link.  $funcionalidades[link]</p>";
         echo "<p> Titulo texto 1º: $funcionalidades[titulotexto1] </p>";
         echo "<p> Texto 1º: $funcionalidades[texto1]</p>";
         echo "<p> Titulo texto 2º: $funcionalidades[titulotexto2] </p>";
         echo "<p> Texto 2º: $funcionalidades[texto2]</p>";
         echo "<div class=alterarExcluir>";
-        echo "<p> <a href =alterInicio.php?cod=$funcionalidades[cod]>Alterar</a>
-             <a href =javascript:confirmar($funcionalidades[cod])>Excluir</a></p>";
+        echo "<p> <a href =alterInicio.php?cod=$funcionalidades[id]>Alterar</a>
+             <a href =javascript:confirmar($funcionalidades[id])>Excluir</a></p>";
         echo "</div>";
         echo "</div>";
         echo "</div>";

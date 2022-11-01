@@ -23,7 +23,7 @@
         </li>
         <li class="subtitulo"><a href="..\pages\inicio.php">index Page</a>
                         <ul>
-                <li class="biSubtitulo"><a href="..\pages\cadInicio.php">-- Cadastrar Funcionário</a></li>
+                <li class="biSubtitulo"><a href="..\pages\cadInicio.php"></a></li>
                 
             </ul>
         </li>

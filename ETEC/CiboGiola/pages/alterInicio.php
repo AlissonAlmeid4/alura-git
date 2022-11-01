@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
-    <script src="src/jquery-3.6.0.min.js"></script>
-    <script src="src/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
     <link rel="stylesheet" href="..\style\styleIntranet.css">
 </head>
 <body>
@@ -22,14 +20,18 @@
         }
     ?>
         <?php
-        $cod = $_GET['cod'];
+        $identificador = $_GET['cod'];
         require('connect.php');
-        $busca = mysqli_query($con, "Select * from `tb_funcionalidades` where `cod` = '$cod'");
+        $busca = mysqli_query($con, "Select * from `tb_funcionalidades` where `id` = '$identificador'");
         $funcionalidades = mysqli_fetch_array($busca);
     ?>
 
-    <form action="alterInicio.act.php" method="post" class="formulario" enctype="multipart/form-data">
+    <form action="alterInicio.act.php" method="post" class="formulario" >
         <h3>Preencha o formulário do Funcionário</h3>
+          <p>
+            <input type="hidden" name="identificador" value="<?php echo $funcionalidades['id']?>" >
+            Codigo Contato <?php echo $funcionalidades['id']; ?>
+        </p>
         <p>
             <label for="link" >Link video:</label>
             <input type="text" name="link" id="link" value="<?php echo $funcionalidades['link']?>">
@@ -53,9 +55,9 @@
 
         <p>
             <input type="submit" value="Gravar">
+            <a href="inicio.php">Voltar</a>
         </p>
     </form>
- 
     <script src="..\src\pages.js"></script>
 </body>
 </html>
