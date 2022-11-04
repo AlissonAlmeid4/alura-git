@@ -17,14 +17,11 @@
         echo "<p class=alert> $_SESSION</p>";
         unset($_SESSION['msg']);
     }
-require('connect.php');
-$funcionario = mysqli_query($con, "Select * from `tb_funcionarios` ");
-while($funcionarios = mysqli_fetch_array($funcionario)){
 
 echo "<div class=bemvindo>";
-echo "<h1>Bem Vindo, $funcionarios[nome] </h1>";
+echo "<h1>Bem Vindo, $_SESSION[nome] </h1>";
 echo "</div>";
-}
+
 ?>
 
 <script src="..\src\pages.js"></script>

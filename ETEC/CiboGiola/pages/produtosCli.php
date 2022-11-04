@@ -29,21 +29,21 @@
     }
 require('connect.php');
 $subcategorias = mysqli_query($con, "Select * from `tb_produtos` GROUP BY subcategoria ORDER BY subcategoria ");
-$produto = mysqli_query($con, "Select * from `tb_produtos` ");
 
 
-while($produtos = mysqli_fetch_array($produto)){
+
     while($subcategoria = mysqli_fetch_array($subcategorias)){
-        echo "<button onclick=viewsub2()>$subcategoria[subcategoria]</button>";
+        echo "<button>$subcategoria[subcategoria]</button>";
         echo "<div id=subcategoria2 class=subcategoria>";
         echo "<ul>";
-        echo "<li>R$ $produtos[valorPrato]  -  $produtos[nomePrato]<button type=button onclick=addBrusctra()>Add/Remover</button></li>";
-        echo "<li>R$ $produtos[valorPrato]  -  $produtos[nomePrato]<button type=button onclick=addBrusctra()>Add/Remover</button></li>";
-        echo "<li>R$ $produtos[valorPrato]  -  $produtos[nomePrato]<button type=button onclick=addBrusctra()>Add/Remover</button></li>";
+        $produtos = mysqli_query($con, "Select * from `tb_produtos` where `subcategoria` = '$subcategoria[subcategoria]' ");
+        while($produto = mysqli_fetch_array($produtos)){
+            echo "<li>R$ $produto[valorPrato]  -  $produto[nomePrato]<button type=button onclick=addBrusctra()>Add/Remover</button></li>";
+        }
         echo "</ul>";
         echo" </div>  ";
     }
-}
+
 ?>
 </nav>    
 </div>
@@ -98,6 +98,12 @@ while($produtos = mysqli_fetch_array($produto)){
 <div id="fundologin">
     <?php include('fundoLogin.php'); ?>
 </div> 
+<script>
+    $('nav>button').click(function(){
+    proximo = $(this).next().slideToggle(1000);
+        
+});
+</script>
 <script src="..\src\pages.js"></script>
 <script>
     $('#fundologin').fadeOut(0);

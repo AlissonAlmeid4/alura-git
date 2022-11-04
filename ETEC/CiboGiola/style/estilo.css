@@ -16,7 +16,7 @@ body{
 h2 {
     margin: 15px;
 }
-.parteinterna > img{
+.parteinterna1 > img{
     width: 300px;
     border: 5px solid rgb(71, 133, 112);
     display: flex;
@@ -33,7 +33,7 @@ h2 {
 #imagens{
     margin-left: 17%;
 }
-.parteinterna> img:hover, .parteinterna2 > img:hover{
+.parteinterna1> img:hover, .parteinterna2 > img:hover{
     border: 5px solid rgb(47, 179, 135);
 }
 .parteinterna2 > img{
@@ -44,7 +44,7 @@ h2 {
     float: right;
     cursor: zoom-in;
 }
-.anuncio{
+.anuncio1{
     background-color: rgba(175, 206, 172, 0.7);
     height: auto;
     width: 90%;
@@ -64,7 +64,7 @@ h2 {
     float: right;
     
 }
-.descricao{
+.descricao1{
     float: left;
     padding: 10px;
     

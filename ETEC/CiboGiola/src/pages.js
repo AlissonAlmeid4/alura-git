@@ -86,17 +86,25 @@ function addMacCac(){
 
 /*Faz aparecer a nav dos categorias*/
 function viewsub1() {
+    
     $('#subcategoria1').fadeToggle(600);
 }
-function viewsub2() {
-    $('#subcategoria2').fadeToggle(1000);
-}
-function viewsub3() {
-    $('#subcategoria3').fadeToggle(1000);
-}
-function viewsub4() {
-    $('#subcategoria4').fadeToggle(1000);
-}
+
+
+
+
+
+
+// function viewsub2() {
+    
+//     //$('#subcategoria2').fadeToggle(1000);
+// }
+// function viewsub3() {
+//     $('#subcategoria3').fadeToggle(1000);
+// }
+// function viewsub4() {
+//     $('#subcategoria4').fadeToggle(1000);
+// }
 
 function CalculaBruscheta1(brusQt1){
     var x = document.getElementById("brusQt1").value;

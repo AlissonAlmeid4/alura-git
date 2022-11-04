@@ -29,16 +29,19 @@
     }
 require('connect.php');
 $produto = mysqli_query($con, "Select * from `tb_produtos`");
+$controle = 2;
 while($produtos = mysqli_fetch_array($produto)){
-echo "<div class=anuncio>";
-echo "<div class=parteinterna>";
+echo "<div class=anuncio$controle>";
+echo "<div class=parteinterna$controle>";
 echo "<img src=$produtos[imagem] alt=#imgG1 id=imgmenor>";
 echo "</div>";
-echo "<div class=descricao>";
+echo "<div class=descricao$controle>";
 echo "<h3>$produtos[nomePrato]</h3>";
 echo "<p>$produtos[descricao]</p>";
 echo "</div>";
 echo "</div>";
+$controle++;
+    if($controle>2){$controle=1;}
 }
 ?> 
 </div>
