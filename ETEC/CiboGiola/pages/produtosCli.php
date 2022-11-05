@@ -29,9 +29,6 @@
     }
 require('connect.php');
 $subcategorias = mysqli_query($con, "Select * from `tb_produtos` GROUP BY subcategoria ORDER BY subcategoria ");
-
-
-
     while($subcategoria = mysqli_fetch_array($subcategorias)){
         echo "<button>$subcategoria[subcategoria]</button>";
         echo "<div id=subcategoria2 class=subcategoria>";
@@ -43,13 +40,9 @@ $subcategorias = mysqli_query($con, "Select * from `tb_produtos` GROUP BY subcat
         echo "</ul>";
         echo" </div>  ";
     }
-
 ?>
 </nav>    
 </div>
-
-
-
     <nav class="carrinho">
         <h2>Carrinho de Compras</h2>
         <div id="BruschettaTradicional" class="listaCarrinho">
@@ -98,25 +91,11 @@ $subcategorias = mysqli_query($con, "Select * from `tb_produtos` GROUP BY subcat
 <div id="fundologin">
     <?php include('fundoLogin.php'); ?>
 </div> 
-<script>
-    $('nav>button').click(function(){
-    proximo = $(this).next().slideToggle(1000);
-        
-});
-</script>
+
 <script src="..\src\pages.js"></script>
 <script>
     $('#fundologin').fadeOut(0);
-    $('#subcategoria1').fadeOut(0);
-    $('#subcategoria2').fadeOut(0);
-    $('#subcategoria3').fadeOut(0);
-    $('#subcategoria4').fadeOut(0);
-    $('#BruschettaTradicional').fadeOut(0);
-    $('#Bruschettabrie').fadeOut(0);
-    $('#BruschettaMussarela').fadeOut(0);
-    $('#MacarraoEspaguete').fadeOut(0);
-    $('#MacarraoMussarela').fadeOut(0);
-    $('#MacarraoCachos').fadeOut(0);
+    esconder();
 </script>
 </body>
 </html>

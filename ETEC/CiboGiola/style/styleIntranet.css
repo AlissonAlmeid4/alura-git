@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Verdana', 'sans-serif';
     box-sizing: border-box;
 
 }
+
 body{
     background-image: url("../Imgs/fundoMacarrao.jpg");
     background-repeat: no-repeat;    
@@ -44,12 +45,7 @@ h3{
     display: flex;
     justify-content: center;
 }
-/*Design do logo*/
-.logo > img{
-    margin-top: 1%;
-    width: 15%;
-    height: 5%;
-}
+
 
 
 /*Barra de menus*/
