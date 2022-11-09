@@ -5,7 +5,7 @@
 
 <nav class="barramenu">
         <div class="logo">
-            <img src="../Imgs/LogoG&C.png" alt="Logo">>
+            <img src="../Imgs/LogoG&C.png" alt="Logo">
         </div>
         <ul class="nav-links">
             <a href="index.php"><li class="item">Início</li></a>

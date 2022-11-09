@@ -33,7 +33,7 @@ $controle = 2;
 while($produtos = mysqli_fetch_array($produto)){
 echo "<div class=anuncio$controle>";
 echo "<div class=parteinterna$controle>";
-echo "<img src=$produtos[imagem] alt=#imgG1 id=imgmenor>";
+echo "<img src=$produtos[imagem] alt=#imgG1 id=imgmenor>";  
 echo "</div>";
 echo "<div class=descricao$controle>";
 echo "<h3>$produtos[nomePrato]</h3>";

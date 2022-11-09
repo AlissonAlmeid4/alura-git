@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 80px;
 }
 .item{
     padding: 25px;
@@ -45,8 +45,7 @@ a, li{
 
 /*Design do logo*/
 .logo > img{
-    margin-top: 3%;
-    width: 35%;
-    height: 10%;
+    margin-top: 7%;
+    height: 12rem;
 }
 
