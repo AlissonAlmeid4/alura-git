@@ -13,13 +13,9 @@
 </head>
 <body>
     <?php include('navbar.php'); ?>
+    <div id="imagens">
 
-<div class="imggrande" id="imagens">
-    <img src="imgs/tipo1.jpg" id="imgG1">
-    <img src="imgs/bruschetta.jpg" id="img2G">
-    <img src="imgs/risoto.jpg" id="img3G">
-    <img src="imgs/pizza.jpg" id="img4G">
-</div>
+    </div>
 <div class="anuncios">
 <?php
     @session_start();
@@ -32,8 +28,8 @@ $produto = mysqli_query($con, "Select * from `tb_produtos`");
 $controle = 2;
 while($produtos = mysqli_fetch_array($produto)){
 echo "<div class=anuncio$controle>";
-echo "<div class=parteinterna$controle>";
-echo "<img src=$produtos[imagem] alt=#imgG1 id=imgmenor>";  
+echo "<div id=img class=parteinterna$controle>";
+echo "<img src=$produtos[imagem] >";  
 echo "</div>";
 echo "<div class=descricao$controle>";
 echo "<h3>$produtos[nomePrato]</h3>";
@@ -53,7 +49,11 @@ $controle++;
 <script src="..\src\pages.js"></script>
 <script>
     $('#fundologin').fadeOut(0);
-    $('.imggrande>img').fadeOut(0);
 </script>
+    <script>
+        $('body>img').click(function(){
+            console.log("teste");
+        })
+    </script>
 </body>
 </html>
