@@ -5,7 +5,19 @@
     box-sizing: border-box;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap');
 
+h1,
+h2,
+h3,
+p,
+a,
+li,
+ul,
+button,
+.gravar {
+    font-family: 'Sono', 'sans-serif';
+}
 .barra{
     display: flex;
     justify-content: center;
@@ -22,8 +34,17 @@
     border-radius: 50px;
 }
 
-a {
+p>a{
     text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+p .gravar{
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px black;
+    font-size: large;
+    cursor: pointer;
 }
 
 
@@ -31,10 +52,11 @@ h2 {
     margin: 15px;
 }
 
+
 p {
     margin-top: 23px;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 5px black;
     font-size: large;
 }
 
@@ -42,7 +64,6 @@ p {
 
 h3 {
     color: white;
-    text-shadow: 3px 3px 3px black;
     font-size: 20pt;
 }
 

@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="..\style\estilo.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body >
     <?php include('navbar.php'); ?>
-    <div id="imagens">
-
-    </div>
-<div class="anuncios">
+        <div id="imagens" onclick="sumir()"></div>
+<div class="anuncios" id="body">
 <?php
     @session_start();
     if(isset($_SESSION['msg'])){
@@ -50,10 +48,6 @@ $controle++;
 <script>
     $('#fundologin').fadeOut(0);
 </script>
-    <script>
-        $('body>img').click(function(){
-            console.log("teste");
-        })
-    </script>
+ 
 </body>
 </html>

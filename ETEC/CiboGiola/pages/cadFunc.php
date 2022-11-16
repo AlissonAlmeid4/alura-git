@@ -88,7 +88,7 @@
             <input type="text" name="senha" id="" class="senha" >
         </p>
         <p>
-            <input type="submit" value="Gravar">
+            <input type="submit" class="gravar" value="Gravar">
         </p>
     </form>
     <script>

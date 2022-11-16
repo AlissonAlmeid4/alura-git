@@ -16,16 +16,17 @@ body{
 h2 {
     margin: 15px;
 }
+
 #imggrande {
     position: absolute;
-    top: 0;
+    top: 5rem;
+    left: 25%;
     width: 1024px;
     height: 720px;
     cursor: zoom-out;
+    z-index: 4;
 }
-#imagens{
-    margin-left: 17%;
-}
+
 .parteinterna1> img:hover, .parteinterna2 > img:hover{
     border: 5px solid rgb(47, 179, 135);
 }
@@ -208,6 +209,9 @@ h3{
     background-color: rgba(175, 206, 172, 0.7);
     display: flex;
     justify-content: space-between;
+    height: 50rem;
+    width: 95%;
+    margin-left: 2.5%;
 }
 .categoria{
     width: 60%;
@@ -342,6 +346,7 @@ h5 > button{
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 5;
 }
 button{
     cursor: pointer;

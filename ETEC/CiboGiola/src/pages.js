@@ -34,11 +34,26 @@ $('#img>img').click(function () {
     const regex = /\/CiboGiola\/([^]+)/;
     var caminho = "../" + regex.exec(url)[1];
 
-    var x = document.createElement("IMG");
+    var x = document.createElement("img");
     x.setAttribute("src", caminho);
     x.setAttribute("id", "imggrande");
-    document.body.appendChild(x);
+
+    var divNova = document.createElement("div");
+    divNova.setAttribute("id", "caixa")
+    divNova.setAttribute("onclick", "sumir()");
+    var conteudoNovo = x;
+    divNova.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada document.body.appendChild(x);
+    var divAtual = document.getElementById("imagens");// adiciona o novo elemento criado e seu conteúdo ao DOM
+    document.body.insertBefore(divNova, divAtual);
+
+    document.getElementById("body").style.filter = "brightness(30%)";
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 });
+function sumir(){
+    $('#caixa>img').fadeOut(0);
+    document.getElementById("body").style.filter = "brightness(100%)";
+}
 
 
 
@@ -48,16 +63,6 @@ function CalculaBruscheta1(brusQt1) {
     y = x * 19.99
     document.getElementById("exibirBrusc1").innerHTML = "R$ " + y;
 }
-function CalculaBruscheta2(brusQt2) {
-    var x = document.getElementById("brusQt2").value;
-    y = x * 32.50
-    document.getElementById("exibirBrusc2").innerHTML = "R$ " + y;
-}
-function CalculaBruscheta3(brusQt3) {
-    var x = document.getElementById("brusQt3").value;
-    y = x * 51.30
-    document.getElementById("exibirBrusc3").innerHTML = "R$ " + y;
-}
 
 
 function CalculaMacarrao1(MussQt1) {
@@ -65,17 +70,6 @@ function CalculaMacarrao1(MussQt1) {
     y = x * 19.99
     document.getElementById("exibirMuss1").innerHTML = "R$ " + y;
 }
-function CalculaMacarrao2(MussQt2) {
-    var x = document.getElementById("MussQt2").value;
-    y = x * 32.50
-    document.getElementById("exibirMuss2").innerHTML = "R$ " + y;
-}
-function CalculaMacarrao3(MussQt3) {
-    var x = document.getElementById("MussQt3").value;
-    y = x * 51.30
-    document.getElementById("exibirMuss3").innerHTML = "R$ " + y;
-}
-
 function CalculaTudo(MussQt1, MussQt2, MussQt3) {
     var a = document.getElementById("MussQt3").value;
     var b = document.getElementById("MussQt2").value;

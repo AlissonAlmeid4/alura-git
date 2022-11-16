@@ -1,11 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Verdana', 'sans-serif';
     box-sizing: border-box;
-
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap');
+
+h1,
+h2,
+h3,
+p,
+a,
+li,
+ul,
+button,
+label{
+    font-family: 'Sono', 'sans-serif';
+}
 body{
     background-image: url("../Imgs/fundoMacarrao.jpg");
     background-repeat: no-repeat;    
@@ -22,19 +33,13 @@ a{
 h2 {
     margin: 15px;
 }
+
 p{
     margin-top: 23px;
     color: white;
-    text-shadow: 2px 2px 2px black;
     font-size: large;  
 }
-.listaIngrediente{
-    margin-top: 23px;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    font-size: large;  
-    margin-left: 19px; 
-}
+
 h3{
     color: white;
     text-shadow: 3px 3px 3px black;
