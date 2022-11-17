@@ -56,9 +56,16 @@ function sumir(){
 }
 
 
+$('#subcategoria2 li').click(function () {
+    const url = this.id;
+    console.log(url)
+
+    document.getElementById("nomeItem").innerHTML = "R$ " + url;
+});
 
 
-function CalculaBruscheta1(brusQt1) {
+
+function CalculaBruscheta1() {
     var x = document.getElementById("brusQt1").value;
     y = x * 19.99
     document.getElementById("exibirBrusc1").innerHTML = "R$ " + y;

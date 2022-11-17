@@ -268,12 +268,33 @@ ul li{
     padding: 2px;
 
 }
-
+.fundoProduto .carrinhoExterno{
+    position: absolute;
+    right: 5rem;
+    top: 8rem;
+}
 .carrinho{
+  
     background: rgba(103, 129, 100, 0.7);
-    width: 30%;
-    height: 300px;
     
+    max-width: 40rem;
+    height: 300px;    
+}
+.carrinhoInterno h5{
+    font-size: 14px;
+    text-shadow: 2px 1px rgb(113, 133, 110);
+}
+.carrinhoInterno{
+    margin-left: 20px;
+    display: flex;
+}
+.carrinhoInterno input{
+    width: 60px;
+}
+.carrinhoInterno button{
+    background: black;
+    color: white;
+    margin-left: 10px;
 }
 .qtde{
     width: 10%;

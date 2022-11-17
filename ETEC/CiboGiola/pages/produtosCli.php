@@ -32,29 +32,28 @@ $subcategorias = mysqli_query($con, "Select * from `tb_produtos` GROUP BY subcat
         echo "<ul>";
         $produtos = mysqli_query($con, "Select * from `tb_produtos` where `subcategoria` = '$subcategoria[subcategoria]' ");
         while($produto = mysqli_fetch_array($produtos)){
-            echo "<li id=$produto[codProd] >R$ $produto[valorPrato]  -  $produto[nomePrato]<button type=button onclick=add()>Add/Remover</button></li>";
+            echo "<li id=$produto[codProd] >R$ $produto[valorPrato]  -  $produto[nomePrato]<button type=button>Add/Remover</button></li>";
         }
         echo "</ul>";
         echo" </div>  ";
     }
 
-$itensCarrinho = mysqli_query($con, "Select * from `tb_produtos` where codProd=1 ");
-while($itensCarrinho = mysqli_fetch_array($itensCarrinho)){
-echo "</nav>";
-echo "</div>";
+$itensCarrinhos = mysqli_query($con, "Select * from `tb_produtos` where codProd=1");
+while($itensCarrinho = mysqli_fetch_array($itensCarrinhos)){
+echo "<nav class=carrinhoExterno>";
+echo "<div>";
 echo    "<nav class=carrinho>";
 echo        "<h2>Carrinho de Compras</h2>";
-echo            "<h5>$itensCarrinho[nomePrato]</h5>";
-echo            "<input type=number class=qtde id=brusQt1 oninput=CalculaBruscheta1() >";
+echo    "<nav class=carrinhoInterno >";
+echo            "<h5 id=nomeItem>----------------------</h5>";
+echo            "<input type=number class=qtde oninput=CalculaBruscheta1() >";
 echo            "<nav id=exibirBrusc1 class=exibir></nav> ";           
-echo            "<button type=button id=btnCar onclick=addBrusctra()>Add/Remover</button>  ";
+echo            "<button type=button id=$itensCarrinho[codProd] onclick=addBrusctra()>Add/Remover</button>  ";
 echo        "</div>";
-echo        "<button type=button class=btnComprar >Comprar</button>";
-echo    "</nav>";
-echo "</div>";
+echo "</nav>";
+
 }
 ?>
-
 <div id="fundologin">
     <?php include('fundoLogin.php'); ?>
 </div> 
@@ -63,14 +62,6 @@ echo "</div>";
 <script>
     $('#fundologin').fadeOut(0);
     esconder();
-</script>
-<script>
-       function add(){
-            $('#subcategoria2 li').click(function(){
-                console.log(this.id);
-            })
-
-    }
 </script>
 </body>
 </html>
