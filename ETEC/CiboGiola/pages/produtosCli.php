@@ -32,7 +32,7 @@ $subcategorias = mysqli_query($con, "Select * from `tb_produtos` GROUP BY subcat
         echo "<ul>";
         $produtos = mysqli_query($con, "Select * from `tb_produtos` where `subcategoria` = '$subcategoria[subcategoria]' ");
         while($produto = mysqli_fetch_array($produtos)){
-            echo "<li id=$produto[codProd] >R$ $produto[valorPrato]  -  $produto[nomePrato]<button type=button>Add/Remover</button></li>";
+            echo "<li id=$produto[codProd] data-preco=\"$produto[valorPrato]\" data-nome=\"$produto[nomePrato]\" >R$ $produto[valorPrato]  -  $produto[nomePrato]<button type=button>Add/Remover</button></li>";
         }
         echo "</ul>";
         echo" </div>  ";
@@ -44,10 +44,13 @@ echo "<nav class=carrinhoExterno>";
 echo "<div>";
 echo    "<nav class=carrinho>";
 echo        "<h2>Carrinho de Compras</h2>";
+echo        "<div class=titu>";
+
+echo        "</div>";
 echo    "<nav class=carrinhoInterno >";
 echo            "<h5 id=nomeItem>----------------------</h5>";
-echo            "<input type=number class=qtde oninput=CalculaBruscheta1() >";
-echo            "<nav id=exibirBrusc1 class=exibir></nav> ";           
+echo            "<input type=number id=valorProduto class=qtde oninput=Calcula() >";
+echo            "<nav id=exibir  class=exibir></nav> ";           
 echo            "<button type=button id=$itensCarrinho[codProd] onclick=addBrusctra()>Add/Remover</button>  ";
 echo        "</div>";
 echo "</nav>";

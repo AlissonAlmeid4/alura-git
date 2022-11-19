@@ -58,30 +58,19 @@ function sumir(){
 
 $('#subcategoria2 li').click(function () {
     const url = this.id;
-    console.log(url)
+  
+    preco = $(this).attr('data-preco');
+    nomeProduto = $(this).attr('data-nome');
 
-    document.getElementById("nomeItem").innerHTML = "R$ " + url;
+    document.getElementById("nomeItem").innerHTML = nomeProduto;
 });
 
-
-
-function CalculaBruscheta1() {
-    var x = document.getElementById("brusQt1").value;
-    y = x * 19.99
-    document.getElementById("exibirBrusc1").innerHTML = "R$ " + y;
+function Calcula() {
+    var x = document.getElementById("valorProduto").value;
+    console.log(x);
+    y = x * preco;
+    console.log(preco);
+    
+    document.getElementById("exibir").innerHTML = "R$ " + y;
 }
 
-
-function CalculaMacarrao1(MussQt1) {
-    var x = document.getElementById("MussQt1").value;
-    y = x * 19.99
-    document.getElementById("exibirMuss1").innerHTML = "R$ " + y;
-}
-function CalculaTudo(MussQt1, MussQt2, MussQt3) {
-    var a = document.getElementById("MussQt3").value;
-    var b = document.getElementById("MussQt2").value;
-    var c = document.getElementById("MussQt1").value;
-
-    y = a + b + c
-    document.getElementById("exibirCalculo").innerHTML = "R$ " + y;
-}

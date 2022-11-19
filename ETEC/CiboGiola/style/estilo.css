@@ -1,8 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Verdana', 'sans-serif';
     box-sizing: border-box;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+h1,
+h2,
+h3,
+p,
+a,
+li,
+ul,
+button,
+label{
+    font-family: 'Roboto', sans-serif;
 
 }
 body{
@@ -248,6 +261,9 @@ h3{
     display: flex;
     justify-content: center;
 }
+a{
+    text-decoration: none;
+}
 ul li{
     text-align: right;
 
@@ -273,6 +289,26 @@ ul li{
     right: 5rem;
     top: 8rem;
 }
+.titu{
+    display: flex;
+}
+.titu h5:first-child{
+    margin-left: 5rem;
+}
+.um{
+    margin-left: 10rem;
+
+}
+.dois{
+    margin-left: 5rem;
+
+}
+.tres{
+    margin-left: 5rem;
+
+}
+
+
 .carrinho{
   
     background: rgba(103, 129, 100, 0.7);
