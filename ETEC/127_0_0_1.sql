@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 19-Nov-2022 às 01:17
+-- Tempo de geração: 25-Nov-2022 às 23:35
 -- Versão do servidor: 8.0.27
 -- versão do PHP: 7.4.26
 
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `tb_funcionalidades` (
 --
 
 INSERT INTO `tb_funcionalidades` (`cod`, `link`, `titulotexto1`, `texto1`, `titulotexto2`, `texto2`) VALUES
-(1, 'https://www.youtube.com/embed/C_9klgP0-fA', 'Cibo & Giola é Sucesso Nacional', '\"Essa comida é muito boa, é espetacular, é sensacional\" foi o que eles dissera, não tem duvidas que nos dedicamos magistralmente, que nos diferenciamos pela nossa dedicação. Mas receber esse retorno de nossos clientes é algo fantástico, eu Alisson e toda nossa equipe(Chaves do 8, Madruga, Clotilde do 13 e dona Florinda) estamos muito alegres por essa vitória.\r\n', 'O Sucesso ainda não é o fim', 'Nossa comida é muito boa, é espetacular, é sensacional2\r\n');
+(1, 'https://www.youtube.com/embed/C_9klgP0-fA', 'Cibo & Giola é Sucesso Nacional', 'Essa comida é muito boa, é espetacular, é sensacional foi o que eles dissera, não tem duvidas que nos dedicamos magistralmente, que nos diferenciamos pela nossa dedicação. Mas receber esse retorno de nossos clientes é algo fantástico, eu Alisson e toda nossa equipe(Chaves do 8, Madruga, Clotilde do 13 e dona Florinda) estamos muito alegres por essa vitória.\r\n', 'O Sucesso ainda não é o fim', 'Nossa comida é muito boa, é espetacular, é sensacional\r\n');
 
 -- --------------------------------------------------------
 

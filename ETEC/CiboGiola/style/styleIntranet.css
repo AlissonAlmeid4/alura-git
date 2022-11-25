@@ -25,7 +25,9 @@ body{
     background-position: top;
     background-attachment: fixed;
 }
-
+.texto1, .texto2, .link, .titulotexto1, .titulotexto2{
+    display: flex;
+}
 a{
     text-decoration: none;
 }
@@ -86,4 +88,11 @@ ul{
     color: white;
     margin-left: 45vh;
 }
+#alterar{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 3px 0px 3px black;
 
+}

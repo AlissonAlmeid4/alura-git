@@ -6,13 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
-     <link rel="stylesheet" href="..\style\styleIntranet.css">
-          <link rel="stylesheet" href="..\style\produtos.css">
+    <link rel="stylesheet" href="..\style\styleIntranet.css">
+    <link rel="stylesheet" href="..\style\produtos.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-
+    <script>
+        function pesquisa(texto){
+            $.ajax({
+                type: "post",
+                url: "pesquisa.act.php?texto="+texto,
+                success: function(response){
+                    $('#result').html(response);
+                }
+            });
+        };
+    </script>
 </head>
 <body>
     <?php include('barraLateral.php') ?>
+    <div class="pesquisar">
+        <p class="pesquisa">Pesquisar <input type="text"  onKeyup="pesquisa(this.value)"></p>
+            <div id="result"></div>
+    </div>
     <?php 
         @session_start();
         if(isset($_SESSION['msg'])){

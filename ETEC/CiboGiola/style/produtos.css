@@ -1,3 +1,12 @@
+.formulario1{
+    display: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    background-color: rgba(175, 206, 172, 0.911);
+    width: 50%;
+    padding: 20px;
+    margin-left: 26%;
+ }
 .formulario{
    display: flex;
 }
@@ -8,4 +17,24 @@
 }
 .img{
     padding-right: 20px;
+}
+.pesquisar{
+	margin: 0 auto;
+
+}
+.pesquisa{
+    margin: 0 auto;
+
+    background-color: rgba(175, 206, 172, 0.911);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 2rem;
+    width: 30%;
+    margin-top: 0.4rem;
+    border-radius: 50px;
+}
+.pesquisa input{
+    border-radius: 50px;
+
 }

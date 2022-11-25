@@ -8,7 +8,7 @@
                                         `texto1` = '$texto1',
                                         `titulotexto2` = '$titulotexto2',
                                         `texto2` = '$texto2'
-                                      WHERE `tb_funcionalidades`.`id` = '$identificador';")){
+                                      WHERE `tb_funcionalidades`.`cod` = '$identificador';")){
                                 $msg = "Alterado com sucesso!";
                         }else{
                                 $msg = "Erro ao alterar!";
