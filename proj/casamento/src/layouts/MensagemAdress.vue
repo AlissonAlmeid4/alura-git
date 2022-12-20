@@ -25,7 +25,10 @@
         E quando não achamos forças para ficar longe um do outro, a data foi
         marcada, Contamos com você em nosssa festa de casamento
         <div class="text-h7">
-          QUE SERÁ REALIZADA NO DIA XX DO MÊS XXXXXXXXX DO ANO DE 202X
+          <br>
+          NA BAHIA: SERÁ REALIZADA NO DIA 12 DO MÊS DE FEVEREIRO DO ANO DE 2023
+          <br>
+         EM SÃO PAULO: SERÁ REALIZADA NO DIA 19 DO MÊS DE FEVEREIRO DO ANO DE 2023
         </div>
       </div>
     </div>

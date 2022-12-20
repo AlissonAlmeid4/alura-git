@@ -1,29 +1,56 @@
 <template>
-<div class="q-pa-md row justify-center">
-  <div class="crono ">
-            <div class="text-h2" >Contagem Regressiva</div>
-            <div class="text-subtitle1">Conte o tempo com a gente</div>
-            <iframe id="oak-embed" width="auto" height="80"
-            style="display: block; margin: 0px auto; border: 0px;"
-            src="https://embed-countdown.onlinealarmkur.com/pt/#2023-01-01T00:00:00@America%2FSao_Paulo"></iframe>
-    </div>
-</div>
+  <PopUp/>
+<div class="q-pa-md">
+    <q-card class="my-card">
+      <q-card-section class="q-pa-md column items-center">
+        <div class="text-h5">Contamos com a sua presença</div>
+        <div class="text-subtitle2">
+          Escolha a localidade mais proxima de você
+        </div>
+      </q-card-section>
 
+      <q-tabs v-model="tab" class="text-teal">
+        <q-tab label="Feira de Santana - BA " name="one" />
+        <q-tab label="Santa Isabel - SP" name="two" />
+      </q-tabs>
+
+      <q-separator />
+
+      <q-tab-panels v-model="tab" animated>
+        <q-tab-panel name="one">
+           <div class="q-pa-md row justify-center">
+              <iframe width="534" height="275" src="https://w2.countingdownto.com/4476720" frameborder="0"></iframe>
+          </div>
+        </q-tab-panel>
+
+        <q-tab-panel name="two">
+           <div class="q-pa-md column items-center">
+              <iframe width="537" height="276" src="https://w2.countingdownto.com/4476744"  frameborder="0"></iframe>
+          </div>
+        </q-tab-panel>
+      </q-tab-panels>
+    </q-card>
+  </div>
 </template>
 
 <script>
+import { ref } from "vue";
+import PopUp from "./PopUp.vue";
 export default {
     name: 'ContagemRegressiva',
-}
+
+    setup() {
+      return {
+        tab: ref("one"),
+      };
+    },
+    components: {PopUp},
+};
+
 </script>
 
 <style scoped>
-  .crono{
-  text-align: center;
-  padding: 12px;
-  color: rgba(0, 0, 0, .7);
-  background-color: rgba(0, 0, 0, 0.3)
-  }
-
 
 </style>
+
+

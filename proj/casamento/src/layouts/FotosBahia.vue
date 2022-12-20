@@ -8,19 +8,19 @@
 
     <div class="fotos q-gutter-md row justify-center">
       <div class="col-4">
-        <q-img src="../photos/DEITADOSGRAMA.jpg" no-native-menu> </q-img>
+        <q-img src="../photos/CasaSuh1.png" no-native-menu> </q-img>
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/CHAPEUSALA.jpg" no-native-menu> </q-img>
+        <q-img src="../photos/CasaSuh4.png" no-native-menu> </q-img>
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/POSEGRAMA.jpg" no-native-menu> </q-img>
+        <q-img src="../photos/CasaSuh3.png" no-native-menu> </q-img>
       </div>
 
       <div class="col-4">
-        <q-img src="../photos/NATURAL.jpg" no-native-menu> </q-img>
+        <q-img src="../photos/CasaSuh2.png" no-native-menu> </q-img>
       </div>
     </div>
   </div>

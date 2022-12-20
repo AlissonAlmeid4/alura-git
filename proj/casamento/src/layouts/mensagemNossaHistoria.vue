@@ -1,7 +1,7 @@
 <template>
   <div class="desabilitar q-pa-xs row justify-center">
     <div class="mensagem">
-      <div class="text-h4">NOSSA HISTÓRIA!</div>
+      <div class="text-h5">NOSSA HISTÓRIA!</div>
       <div class="text-h6">
         CONHEÇA OS DETALHES DA NOSSA CAMINHADA ATÉ O GRANDE SONHO DO NOSSO
         CASAMENTO.
