@@ -46,11 +46,13 @@
           <div class="q-pa-md column items-center">
             <div>
               <div class="text-subtitle2">
-                Você esta convidado para o nosso casamento que se realizará na:
+                Você esta convidado para o nosso casamento que se realizará no:
               </div>
               <div class="text-subtitle2">
-                <strong> Rua.:</strong> Estr. Cafundo,
-                <strong>Bairro.:</strong> Santa Isabel
+                <strong>Sitio Berro D'agua </strong> <br>
+                <strong> Rua.:</strong> Estr. Cafundo, 1.450
+                <strong>Bairro.:</strong> Cafundo
+                <strong>CEP.:</strong> 07500-000
                 <strong>Estado.:</strong> São Paulo
                 <strong>Pais.:</strong> Brasil
               </div>

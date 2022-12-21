@@ -20,7 +20,7 @@ export default {
   name: 'PopUp',
   setup () {
     return {
-      dialog: ref(true)
+      dialog: ref(false)
     }
   }
 }
