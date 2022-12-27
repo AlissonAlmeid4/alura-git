@@ -15,9 +15,89 @@
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
+                    label="Geladeira"
+                    href="https://www.zoom.com.br/search?q=Geladeira"
+                  />
+                </q-item>
+              <q-item clickable v-ripple>
+                  <q-btn
+                    color="white"
+                    style="width: 250px"
+                    text-color="black"
+                    target="_blank"
+                    label="Fogão"
+                    href="https://www.zoom.com.br/search?q=Fogão"
+                  />
+                </q-item>
+                <q-item clickable v-ripple>
+                  <q-btn
+                    color="white"
+                    style="width: 250px"
+                    text-color="black"
+                    target="_blank"
+                    label="Máquina de Lavar roupa"
+                    href="https://www.zoom.com.br/search?q=Máquina de Lavar roupa"
+                  />
+                </q-item>
+              <q-item clickable v-ripple>
+                <q-btn
+                  color="white"
+                  style="width: 250px"
+                  text-color="black"
+                  target="_blank"
+                  label="Cama"
+                  href="https://www.zoom.com.br/search?q=Cama"
+                />
+              </q-item>
+              <q-item clickable v-ripple>
+                <q-btn
+                  color="white"
+                  style="width: 250px"
+                  text-color="black"
+                  target="_blank"
+                  label="Guarda-roupa"
+                  href="https://www.zoom.com.br/search?q=Guarda-roupa"
+                />
+              </q-item>
+              <q-item clickable v-ripple>
+                <q-btn
+                  color="white"
+                  style="width: 250px"
+                  text-color="black"
+                  target="_blank"
+                  label="Sofá"
+                  href="https://www.zoom.com.br/search?q=Sofá"
+                />
+              </q-item>
+                <q-item clickable v-ripple>
+                  <q-btn
+                    color="white"
+                    style="width: 250px"
+                    text-color="black"
+                    target="_blank"
+                    label="Liquidificador"
+                    href="https://www.zoom.com.br/search?q=Liquidificador"
+                  />
+                </q-item>
+                <q-item clickable v-ripple>
+                  <q-btn
+                    color="white"
+                    style="width: 250px"
+                    text-color="black"
+                    target="_blank"
+                    label="Microondas"
+                    href="https://www.zoom.com.br/search?q=Microondas"
+                  />
+                </q-item>
+                <q-item clickable v-ripple>
+                  <q-btn
+                    color="white"
+                    style="width: 250px"
+                    text-color="black"
+                    target="_blank"
                     label="Batedeira"
                     href="https://www.zoom.com.br/search?q=Batedeira"
-                  />
+                    />
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
@@ -39,56 +119,7 @@
                     href="https://www.zoom.com.br/search?q=Ferropassar"
                   />
                 </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Fogão"
-                    href="https://www.zoom.com.br/search?q=Fogão"
-                  />
-                </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Microondas"
-                    href="https://www.zoom.com.br/search?q=Microondas"
-                  />
-                </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Geladeira"
-                    href="https://www.zoom.com.br/search?q=Geladeira"
-                  />
-                </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Liquidificador"
-                    href="https://www.zoom.com.br/search?q=Liquidificador"
-                  />
-                </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Máquina de Lavar roupa"
-                    href="https://www.zoom.com.br/search?q=Máquina de Lavar roupa"
-                  />
-                </q-item>
+
                 <q-item clickable v-ripple>
                   <q-btn
                     color="white"
@@ -139,26 +170,7 @@
                     href="https://www.zoom.com.br/search?q=Garrafa térmica"
                   />
                 </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Garrafa térmica"
-                    href="https://www.zoom.com.br/search?q=Garrafa térmica"
-                  />
-                </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Jogos de facas para cozinha"
-                    href="https://www.zoom.com.br/search?q=Jogos de facas para cozinha"
-                  />
-                </q-item>
+
                 <q-item clickable v-ripple>
                   <q-btn
                     color="white"
@@ -189,7 +201,22 @@
                     href="https://www.zoom.com.br/search?q=Jogo de sobremesa"
                   />
                 </q-item>
-                <q-item clickable v-ripple>
+            <q-item clickable v-ripple>
+                  <q-btn
+                    color="white"
+                    style="width: 250px"
+                    text-color="black"
+                    target="_blank"
+                    label="Conjunto de copos ou taças"
+                    href="https://www.zoom.com.br/search?q=Conjunto de copos ou taças"
+                  />
+                </q-item>
+              </q-list>
+            </div>
+          </div>
+          <div class="col-5">
+            <q-list>
+              <q-item clickable v-ripple>
                   <q-btn
                     color="white"
                     style="width: 250px"
@@ -215,16 +242,6 @@
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Conjunto de copos ou taças"
-                    href="https://www.zoom.com.br/search?q=Conjunto de copos ou taças"
-                  />
-                </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
                     label="Bandejas diversas"
                     href="https://www.zoom.com.br/search?q=Bandejas diversas"
                   />
@@ -239,11 +256,6 @@
                     href="https://www.zoom.com.br/search?q=Fruteiras"
                   />
                 </q-item>
-              </q-list>
-            </div>
-          </div>
-          <div class="col-5">
-            <q-list>
               <q-item clickable v-ripple>
                 <q-btn
                   color="white"
@@ -360,38 +372,8 @@
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Cama"
-                  href="https://www.zoom.com.br/search?q=Cama"
-                />
-              </q-item>
-              <q-item clickable v-ripple>
-                <q-btn
-                  color="white"
-                  style="width: 250px"
-                  text-color="black"
-                  target="_blank"
-                  label="Guarda-roupa"
-                  href="https://www.zoom.com.br/search?q=Guarda-roupa"
-                />
-              </q-item>
-              <q-item clickable v-ripple>
-                <q-btn
-                  color="white"
-                  style="width: 250px"
-                  text-color="black"
-                  target="_blank"
                   label="Mesa de Jantar"
                   href="https://www.zoom.com.br/search?q=Mesa de Jantar"
-                />
-              </q-item>
-              <q-item clickable v-ripple>
-                <q-btn
-                  color="white"
-                  style="width: 250px"
-                  text-color="black"
-                  target="_blank"
-                  label="Sofá"
-                  href="https://www.zoom.com.br/search?q=Sofá"
                 />
               </q-item>
               <q-item clickable v-ripple>

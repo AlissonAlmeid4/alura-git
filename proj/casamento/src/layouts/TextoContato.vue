@@ -19,7 +19,7 @@ gosta muito de cantar, viajar, sair com
 os amigos, fascinada pela arte da
 música e pelo universo cinematográfico.
 Formada em Marketing ela é comunicativa
-e dedicada, luta e batalha pelo o quer.
+e dedicada, luta e batalha pelo que quer.
 Tem fama de mandona e chatinha mas com
 todo esse seu jeitinho misturado deixa
 alegria e saudades por onde passa!
@@ -33,7 +33,7 @@ alegria e saudades por onde passa!
 
         <pre>
 <strong>Alisson Almeida</strong>
-<strong>Tel.:</strong> 11 9 92325271
+<strong>Tel.:</strong> 11 9 9232-5271
 <strong>E-mail.:</strong> alisson.a-work@outlook.com
 <strong>Ele é</strong> Carismático, gentil, educado e
 carinhoso, gosta de ver resultado em
@@ -46,15 +46,22 @@ faz o possível para solucionar o
 problema.
 Tem jeitinho bravo e sério mas não mede
 esforços para fazer as pessoas que
-ama feliz!
+ama, feliz!
         </pre>
       </div>
     </div>
   </div>
+  <FooTer/>
 </template>
 
 <script>
-export default {};
+import FooTer from "../layouts/FooTer.vue";
+
+export default {
+    components: {
+    FooTer,
+},
+};
 </script>
 
 <style scoped>
