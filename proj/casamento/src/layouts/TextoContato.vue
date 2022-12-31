@@ -51,15 +51,12 @@ ama, feliz!
       </div>
     </div>
   </div>
-  <FooTer/>
 </template>
 
 <script>
-import FooTer from "../layouts/FooTer.vue";
 
 export default {
     components: {
-    FooTer,
 },
 };
 </script>
