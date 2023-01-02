@@ -1,5 +1,5 @@
 <template>
-  <PopUp/>
+  <!-- <PopUp/> -->
 <div class="q-pa-md">
     <q-card class="my-card">
       <q-card-section class="q-pa-md column items-center">
@@ -37,7 +37,7 @@
 
 <script>
 import { ref } from "vue";
-import PopUp from "./PopUp.vue";
+// import PopUp from "./PopUp.vue";
 
 export default {
     name: 'ContagemRegressiva',
@@ -47,7 +47,7 @@ export default {
         tab: ref("one"),
       };
     },
-    components: {PopUp},
+    // components: {PopUp},
 };
 </script>
 
