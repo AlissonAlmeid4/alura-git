@@ -5,9 +5,13 @@
     <q-dialog v-model="dialog">
       <q-card>
         <q-card-section class="row items-center q-gutter-sm">
-              <!-- <iframe width="1000" height="400" src="https://www.youtube.com/watch?v=4fezP875xOQ"  frameborder="0"></iframe> -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4fezP875xOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </q-card-section>
+              <!-- width="250" height="415 mobile -->
+            <iframe  src="https://www.youtube.com/embed/GcnPOo6ucew"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+</q-card-section>
       </q-card>
     </q-dialog>
   </div>
@@ -20,8 +24,22 @@ export default {
   name: 'PopUp',
   setup () {
     return {
-      dialog: ref(false)
+      dialog: ref(true)
     }
   }
 }
 </script>
+<style scoped>
+    iframe{
+      width:560px;
+      height:515px;
+    }
+  @media screen and (max-width: 480px)  {
+
+    iframe{
+      width: 250px;
+      height: 415px;
+    }
+
+}
+</style>
