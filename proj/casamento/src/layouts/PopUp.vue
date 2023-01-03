@@ -1,11 +1,11 @@
 <template>
   <div class="q-pa-md row justify-center">
-    <q-btn label="Assistir ao video novamente" color="light-green" @click="dialog = true" />
-
-    <q-dialog v-model="dialog">
-      <q-card>
+    <q-btn label="Assistir ao video novamente" color="light-green" @click="icon = true" />
+    <q-dialog v-model="icon">
+      <q-card >
         <q-card-section class="row items-center q-gutter-sm">
-              <!-- width="250" height="415 mobile -->
+            <q-space />
+            <q-btn icon="close" flat round dense v-close-popup></q-btn>
             <iframe  src="https://www.youtube.com/embed/GcnPOo6ucew"
             title="YouTube video player"
             frameborder="0"
@@ -16,7 +16,6 @@
     </q-dialog>
   </div>
 </template>
-
 <script>
 import { ref } from 'vue'
 
@@ -24,7 +23,8 @@ export default {
   name: 'PopUp',
   setup () {
     return {
-      dialog: ref(true)
+      icon: ref(true)
+
     }
   }
 }
@@ -37,9 +37,8 @@ export default {
   @media screen and (max-width: 480px)  {
 
     iframe{
-      width: 250px;
-      height: 415px;
+      width: 277px;
+      height: 425px;
     }
-
 }
 </style>

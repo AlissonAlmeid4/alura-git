@@ -1,5 +1,7 @@
+
+
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf"  >
     <q-header elevated class="glossy">
       <q-toolbar class="bg-light-green-5">
         <q-btn
@@ -10,8 +12,8 @@
           aria-label="Menu"
           icon="menu"
         />
-
-        <q-toolbar-title> Suellen & Alisson </q-toolbar-title>
+           <img id="imagemSeta" src="../photos/setaEsquerda_1.gif" >
+           <q-toolbar-title id="titulo"> <u> Suellen & Alisson </u> </q-toolbar-title>
       </q-toolbar>
     </q-header>
     <q-drawer
@@ -21,8 +23,18 @@
       class="bg-light-green-2"
     >
       <q-list>
-        <q-item-label header> Menu Principal </q-item-label>
+        <q-item-label header> Menu Principal
 
+       <q-btn
+       id="botaoInterno"
+          flat
+          dense
+          round
+          @click="leftDrawerOpen = !leftDrawerOpen"
+          aria-label="Menu"
+          icon="chevron_left"
+        />
+        </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
@@ -104,7 +116,7 @@ export default defineComponent({
   },
 
   setup () {
-    const leftDrawerOpen = ref(false)
+    const leftDrawerOpen = ref(true)
 
     return {
       essentialLinks: linksList,
@@ -116,3 +128,22 @@ export default defineComponent({
   }
 })
 </script>
+<style scoped>
+  #titulo{
+    text-align: center;
+  }
+  #imagemSeta{
+    height: 4rem;
+  }
+  #botaoInterno{
+    display: none;
+  }
+    @media screen and (max-width: 480px)  {
+
+    #botaoInterno{
+    display: inline-flex;
+    margin-left: 7rem;
+    border: 1px solid ;
+  }
+}
+</style>
