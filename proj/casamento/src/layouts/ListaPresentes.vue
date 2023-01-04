@@ -11,7 +11,7 @@
               <q-list>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
@@ -21,7 +21,7 @@
                 </q-item>
               <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
@@ -31,7 +31,7 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
@@ -101,11 +101,11 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Batedeira"
+                    label="Batedeira - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Batedeira"
                     />
                 </q-item>
