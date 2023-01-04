@@ -15,7 +15,7 @@
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Geladeira"
+                    label="Geladeira - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Geladeira"
                   />
                 </q-item>
@@ -25,8 +25,18 @@
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Fogão"
+                    label="Fogão - (já prometido)"
                     href="https://www.zoom.com.br/search?q=Fogão"
+                  />
+                </q-item>
+                <q-item clickable v-ripple>
+                  <q-btn
+                    color="white"
+                    style="width: 250px"
+                    text-color="black"
+                    target="_blank"
+                    label="Air Flyer - (já prometido)"
+                    href="https://www.zoom.com.br/search?q=fritadeira"
                   />
                 </q-item>
                 <q-item clickable v-ripple>
