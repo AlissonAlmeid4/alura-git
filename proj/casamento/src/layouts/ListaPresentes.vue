@@ -17,6 +17,7 @@
                     target="_blank"
                     label="Geladeira - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Geladeira"
+                    Rubens e Lu
                   />
                 </q-item>
               <q-item clickable v-ripple>
@@ -27,6 +28,7 @@
                     target="_blank"
                     label="Fogão - (já prometido)"
                     href="https://www.zoom.com.br/search?q=Fogão"
+                    Neia e Alceu
                   />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -37,6 +39,7 @@
                     target="_blank"
                     label="Air Flyer - (já prometido)"
                     href="https://www.zoom.com.br/search?q=fritadeira"
+                    Larissa e Leo
                   />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -47,6 +50,7 @@
                     target="_blank"
                     label="Máquina de Lavar roupa"
                     href="https://www.zoom.com.br/search?q=Máquina de Lavar roupa"
+                    Irmaos Suh
                   />
                 </q-item>
               <q-item clickable v-ripple>
@@ -81,12 +85,13 @@
               </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Liquidificador"
+                    label="Liquidificador - (já prometido)"
                     href="https://www.zoom.com.br/search?q=Liquidificador"
+                    Thamires
                   />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -107,6 +112,7 @@
                     target="_blank"
                     label="Batedeira - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Batedeira"
+                    Adrielle
                     />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -127,6 +133,7 @@
                     target="_blank"
                     label="Ferro de Passar - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Ferropassar"
+                    Edson
                   />
                 </q-item>
 
@@ -142,12 +149,13 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Sanduicheira elétrica"
+                    label="Sanduicheira elétrica - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Sanduicheira elétrica"
+                    Luana Souza
                   />
                 </q-item>
                 <q-item clickable v-ripple>

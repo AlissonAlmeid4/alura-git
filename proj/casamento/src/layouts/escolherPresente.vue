@@ -1,11 +1,12 @@
 <template>
-<div class="q-pa-md">
 
-        <div class="mensagem column items-center">
-        <div class="text-subtitle1 " >
+<div class="q-pa-md ">
 
-Já sabe qual presente vai dar ? <q-btn label="Clique aqui" color="green" @click="bar = true" /> e nos avise.
-Providenciaremos um lugar para cada presente...
+<div class="mensagem column items-center ">
+<div class="text-subtitle1" >
+    <div class="text-h5"> Já sabe qual presente dar ?</div>
+    <q-btn label="Clique aqui" color="green"  @click="bar = true" /> e nos avise. <br>
+    Providenciaremos um lugar para cada presente...
 
    <q-dialog v-model="bar" >
       <q-card>
@@ -49,6 +50,7 @@ export default {
   text-align: center;
   padding: 12px;
   color: rgba(0, 0, 0, .7);
+  background: #9ccc65;
   }
   @media screen and (max-width: 480px)  {
     iframe{
