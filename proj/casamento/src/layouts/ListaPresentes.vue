@@ -96,6 +96,17 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
+                    color="light-green-5"
+                    style="width: 250px"
+                    text-color="black"
+                    target="_blank"
+                    label="Armario de Cozinha - (já prometido)"
+                    href="https://www.zoom.com.br/search?q=fritadeira"
+                    Tia Cleusa
+                  />
+                </q-item>
+                <q-item clickable v-ripple>
+                  <q-btn
                     color="white"
                     style="width: 250px"
                     text-color="black"
@@ -211,39 +222,40 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Jogo de sobremesa"
+                    label="Jogo de sobremesa - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Jogo de sobremesa"
+                    Rosane
                   />
-                </q-item>
-            <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Conjunto de copos ou taças"
-                    href="https://www.zoom.com.br/search?q=Conjunto de copos ou taças"
-                  />
-                </q-item>
-              </q-list>
+                </q-list>
+              </div>
             </div>
-          </div>
-          <div class="col-5">
-            <q-list>
-              <q-item clickable v-ripple>
+            <div class="col-5">
+              <q-list>
+                <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Tábua para passar roupa"
-                    href="https://www.zoom.com.br/search?q=Tábua para passar roupa"
+                  color="white"
+                  style="width: 250px"
+                  text-color="black"
+                  target="_blank"
+                  label="Tábua para passar roupa"
+                  href="https://www.zoom.com.br/search?q=Tábua para passar roupa"
                   />
                 </q-item>
+              </q-item>
+          <q-item clickable v-ripple>
+                <q-btn
+                  color="white"
+                  style="width: 250px"
+                  text-color="black"
+                  target="_blank"
+                  label="Conjunto de copos ou taças"
+                  href="https://www.zoom.com.br/search?q=Conjunto de copos ou taças"
+                />
+              </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
                     color="white"
