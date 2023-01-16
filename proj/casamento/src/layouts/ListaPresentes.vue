@@ -150,11 +150,11 @@
 
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Multiprocessador"
+                    label="Multiprocessador - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Multiprocessador"
                   />
                 </q-item>
@@ -230,6 +230,7 @@
                     href="https://www.zoom.com.br/search?q=Jogo de sobremesa"
                     Rosane
                   />
+                </q-item>
                 </q-list>
               </div>
             </div>
@@ -245,7 +246,6 @@
                   href="https://www.zoom.com.br/search?q=Tábua para passar roupa"
                   />
                 </q-item>
-              </q-item>
           <q-item clickable v-ripple>
                 <q-btn
                   color="white"
