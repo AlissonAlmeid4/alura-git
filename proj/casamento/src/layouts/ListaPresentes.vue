@@ -11,11 +11,11 @@
               <q-list>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Geladeira - (já prometida)"
+                    label="Geladeira - já Recebemos"
                     href="https://www.zoom.com.br/search?q=Geladeira"
                     Rubens e Lu
                   />
@@ -233,6 +233,7 @@
                 </q-item>
                 </q-list>
               </div>
+              <!-- Divisão entre ás colunas -->
             </div>
             <div class="col-5">
               <q-list>
@@ -444,6 +445,26 @@
                   target="_blank"
                   label="Mesa de centro"
                   href="https://www.zoom.com.br/search?q=Mesa de centro"
+                />
+              </q-item>
+              <q-item clickable v-ripple>
+                <q-btn
+                  color="light-green-4"
+                  style="width: 250px"
+                  text-color="black"
+                  target="_blank"
+                  label="Travesseiros - já Recebemos"
+                  href=""
+                />
+              </q-item>
+              <q-item clickable v-ripple>
+                <q-btn
+                  color="light-green-4"
+                  style="width: 250px"
+                  text-color="black"
+                  target="_blank"
+                  label="Cobertor - já Recebemos"
+                  href=""
                 />
               </q-item>
             </q-list>
