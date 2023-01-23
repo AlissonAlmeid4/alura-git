@@ -150,11 +150,11 @@
 
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Multiprocessador - (já prometida)"
+                    label="Multiprocessador - (já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Multiprocessador"
                   />
                 </q-item>
@@ -455,6 +455,7 @@
                   target="_blank"
                   label="Travesseiros - já Recebemos"
                   href=""
+                  Ir Miria
                 />
               </q-item>
               <q-item clickable v-ripple>
@@ -465,6 +466,7 @@
                   target="_blank"
                   label="Cobertor - já Recebemos"
                   href=""
+                  Tia Leila
                 />
               </q-item>
             </q-list>
