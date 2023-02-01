@@ -15,18 +15,18 @@
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Geladeira - já Recebemos"
+                    label="Geladeira - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Geladeira"
                     Rubens e Lu
                   />
                 </q-item>
               <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Fogão - (já prometido)"
+                    label="Fogão - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Fogão"
                     Neia e Alceu
                   />
@@ -44,13 +44,13 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Máquina de Lavar roupa"
+                    label="Máquina de Lavar roupa - (já prometido)"
                     href="https://www.zoom.com.br/search?q=Máquina de Lavar roupa"
-                    Irmaos Suh
+                    Rogerio Feitosa
                   />
                 </q-item>
               <q-item clickable v-ripple>
@@ -96,11 +96,11 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Armario de Cozinha - (já prometido)"
+                    label="Armario de Cozinha - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=fritadeira"
                     Tia Cleusa
                   />
@@ -123,7 +123,7 @@
                     target="_blank"
                     label="Batedeira - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Batedeira"
-                    Adrielle
+                    Deison
                     />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -154,8 +154,9 @@
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Multiprocessador - (já Recebemos)"
+                    label="Multiprocessador - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Multiprocessador"
+                    Andryos
                   />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -171,12 +172,13 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Ventilador"
+                    label="Ventilador - (já prometida)"
                     href="https://www.zoom.com.br/search?q=Ventilador"
+                    Aline
                   />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -249,22 +251,25 @@
                 </q-item>
           <q-item clickable v-ripple>
                 <q-btn
-                  color="white"
+                  color="light-green-4"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Conjunto de copos ou taças"
+                  label="Conjunto de copos ou taças - (Já Recebemos)"
                   href="https://www.zoom.com.br/search?q=Conjunto de copos ou taças"
+                  Irma Angelica
                 />
               </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Tábuas carne"
+                    label="Tábuas carne - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Tábuas carne"
+                    irma Angelica
+                    Suellen
                   />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -289,12 +294,13 @@
                 </q-item>
               <q-item clickable v-ripple>
                 <q-btn
-                  color="white"
+                  color="light-green-4"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Jarra"
+                  label="Jarra - (Jà Recebemos)"
                   href="https://www.zoom.com.br/search?q=Jarra"
+                  irma Angelica
                 />
               </q-item>
               <q-item clickable v-ripple>
@@ -319,12 +325,13 @@
               </q-item>
               <q-item clickable v-ripple>
                 <q-btn
-                  color="white"
+                  color="light-green-5"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Panelas antiaderentes"
+                  label="Panelas antiaderentes - (Já Prometido)"
                   href="https://www.zoom.com.br/search?q=Panelas antiaderentes"
+                  Ir Cicero
                 />
               </q-item>
               <q-item clickable v-ripple>
@@ -375,6 +382,8 @@
                   target="_blank"
                   label="Jogo de panelas- (já prometida)"
                   href="https://www.zoom.com.br/search?q=Jogo de panelas"
+                  Natan
+                  Sarah
                 />
               </q-item>
               <q-item clickable v-ripple>
@@ -389,12 +398,14 @@
               </q-item>
               <q-item clickable v-ripple>
                 <q-btn
-                  color="white"
+                  color="light-green-5"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Panela de pressão"
+                  label="Panela de pressão - (Já Prometido)"
                   href="https://www.zoom.com.br/search?q=Panela de pressão"
+                  Ir Jorge
+                  Genival
                 />
               </q-item>
               <q-item clickable v-ripple>
@@ -453,7 +464,7 @@
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Travesseiros - já Recebemos"
+                  label="Travesseiros - (Já Recebemos)"
                   href=""
                   Ir Miria
                 />
@@ -464,7 +475,7 @@
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Cobertor - já Recebemos"
+                  label="Cobertor - (Já Recebemos)"
                   href=""
                   Tia Leila
                 />
