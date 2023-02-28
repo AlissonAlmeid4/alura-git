@@ -33,11 +33,11 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Air Flyer - (já prometido)"
+                    label="Air Flyer - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=fritadeira"
                     Larissa e Leo
                   />
@@ -55,11 +55,11 @@
                 </q-item>
               <q-item clickable v-ripple>
                 <q-btn
-                  color="white"
+                  color="light-green-4"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Cama"
+                  label="Cama - (Já Recebemos)"
                   href="https://www.zoom.com.br/search?q=Cama"
                 />
               </q-item>
@@ -75,21 +75,21 @@
               </q-item>
               <q-item clickable v-ripple>
                 <q-btn
-                  color="white"
+                  color="light-green-5"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Sofá"
+                  label="Sofá - (já prometido)"
                   href="https://www.zoom.com.br/search?q=Sofá"
                 />
               </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Liquidificador - (já prometido)"
+                    label="Liquidificador - (já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Liquidificador"
                     Thamires
                   />
@@ -107,42 +107,32 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Microondas"
+                    label="Microondas - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Microondas"
                   />
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Batedeira - (já prometida)"
+                    label="Batedeira - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Batedeira"
                     Deison
                     />
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Cafeteira"
-                    href="https://www.zoom.com.br/search?q=Cafeteira"
-                  />
-                </q-item>
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="light-green-5"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Ferro de Passar - (já prometida)"
+                    label="Ferro de Passar - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Ferropassar"
                     Edson
                   />
@@ -161,55 +151,44 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="white"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Sanduicheira elétrica - (já prometida)"
+                    label="Sanduicheira elétrica"
                     href="https://www.zoom.com.br/search?q=Sanduicheira elétrica"
                     Luana Souza
                   />
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Ventilador - (já prometida)"
+                    label="Ventilador  - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Ventilador"
                     Aline
                   />
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Faqueiro"
+                    label="Faqueiro - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Faqueiro"
                   />
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Garrafa térmica"
+                    label="Garrafa térmica - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Garrafa térmica"
-                  />
-                </q-item>
-
-                <q-item clickable v-ripple>
-                  <q-btn
-                    color="white"
-                    style="width: 250px"
-                    text-color="black"
-                    target="_blank"
-                    label="Jogos de facas para cozinha"
-                    href="https://www.zoom.com.br/search?q=Jogos de facas para cozinha"
                   />
                 </q-item>
                 <q-item clickable v-ripple>
@@ -224,11 +203,11 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Jogo de sobremesa - (já prometida)"
+                    label="Jogo de sobremesa - (Já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Jogo de sobremesa"
                     Rosane
                   />
@@ -288,7 +267,7 @@
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Fruteiras"
+                    label="Fruteira"
                     href="https://www.zoom.com.br/search?q=Fruteiras"
                   />
                 </q-item>
@@ -325,11 +304,11 @@
               </q-item>
               <q-item clickable v-ripple>
                 <q-btn
-                  color="light-green-5"
+                  color="light-green-4"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Panelas antiaderentes - (Já Prometido)"
+                  label="Panelas antiaderentes - (Já Recebemos)"
                   href="https://www.zoom.com.br/search?q=Panelas antiaderentes"
                   Ir Cicero
                 />
@@ -376,11 +355,11 @@
               </q-item>
               <q-item clickable v-ripple>
                 <q-btn
-                  color="light-green-5"
+                  color="light-green-4"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Jogo de panelas- (já prometida)"
+                  label="Jogo de panelas - (Já Recebemos)"
                   href="https://www.zoom.com.br/search?q=Jogo de panelas"
                   Natan
                   Sarah
@@ -398,11 +377,11 @@
               </q-item>
               <q-item clickable v-ripple>
                 <q-btn
-                  color="light-green-5"
+                  color="light-green-4"
                   style="width: 250px"
                   text-color="black"
                   target="_blank"
-                  label="Panela de pressão - (Já Prometido)"
+                  label="Panela de pressão - (Já Recebemos)"
                   href="https://www.zoom.com.br/search?q=Panela de pressão"
                   Ir Jorge
                   Genival
