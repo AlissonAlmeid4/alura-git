@@ -44,11 +44,11 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="light-green-5"
+                    color="light-green-4"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Máquina de Lavar roupa - (já prometido)"
+                    label="Máquina de Lavar roupa - (já Recebemos)"
                     href="https://www.zoom.com.br/search?q=Máquina de Lavar roupa"
                     Rogerio Feitosa
                   />
@@ -151,13 +151,13 @@
                 </q-item>
                 <q-item clickable v-ripple>
                   <q-btn
-                    color="white"
+                    color="light-green-5"
                     style="width: 250px"
                     text-color="black"
                     target="_blank"
-                    label="Sanduicheira elétrica"
+                    label="Sanduicheira elétrica - (Já Prometido)"
                     href="https://www.zoom.com.br/search?q=Sanduicheira elétrica"
-                    Luana Souza
+                    Alberto
                   />
                 </q-item>
                 <q-item clickable v-ripple>
