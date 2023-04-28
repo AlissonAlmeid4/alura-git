@@ -1,0 +1,7 @@
+Esconder e Aparecer - https://cursos.alura.com.br/extra/alura-mais/data-attributes-do-html5-c109
+titulo e e colunas abaixo - https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_default&stacked=h
+Galarias - https://mdbootstrap.com/docs/standard/extended/gallery/
+
+aparecer
+modal
+DIALOG
