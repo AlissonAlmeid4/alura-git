@@ -27,5 +27,197 @@ module.exports = {
             json.result = pessoa;
         }
         res.json(json);
-    }
+    },
+
+    inserir: async(req, res) => {
+        let json = {error:'',result:{}};
+
+        let nome = req.body.nome;
+        let celular = req.body.celular;
+        let tipo = req.body.tipo;
+                
+        if(nome && celular && tipo){
+            let PessoaCodigo = await casamentoService.inserir(nome, celular, tipo);
+            json.result = {
+                codigo: PessoaCodigo,
+                nome,
+                celular,
+                tipo
+            };
+        }else{
+            json.error = 'Campos não enviados'
+        }
+        res.json(json);
+    },
+    alterar: async(req, res) => {
+        let json = {error:'',result:{}};
+
+        let codigo = req.params.codigo;
+        let nome = req.body.nome;
+        let celular = req.body.celular;
+        let tipo = req.body.tipo;
+                
+        if(codigo && nome && celular && tipo){
+            await casamentoService.alterar(codigo, nome, celular, tipo);
+            json.result = {
+                codigo,
+                nome,
+                celular,
+                tipo
+            };
+        }else{
+            json.error = 'Campos não enviados'
+        }
+        res.json(json);
+    },
+    excluir: async(req,res) =>{
+        let json = {error:'', result:{}};
+
+        await CasamentoService.excluir(req.params.codigo);
+
+        res.json(json);
+    },
+
+    //Presentes
+
+    
+    buscarTodosPresente: async (req, res)=> {
+        let json = {error:'',result:[]};
+
+        let presente = await CasamentoService.buscarTodosPresente();
+
+        for(let i in presente){
+            json.result.push({
+                codigo:   presente[i].codigo,
+                nome:   presente[i].nome,
+                celular:   presente[i].celular,
+                presente:   presente[i].presente
+            });
+        }
+        res.json(json); 
+    },
+    buscarUmPresente: async(req, res) => {
+        let json = {error:'',result:{}};
+
+        let nome = req.params.nome;
+        let presente = await casamentoService.buscarUmPresente(nome);
+        
+        if(presente){
+            json.result = presente;
+        }
+        res.json(json);
+    },
+
+    inserirPresente: async(req, res) => {
+        let json = {error:'',result:{}};
+
+        let nome = req.body.nome;
+        let celular = req.body.celular;
+        let presente = req.body.presente;
+                
+        if(nome && celular && presente){
+            let PresenteCodigo = await casamentoService.inserirPresente(nome, celular, presente);
+            json.result = {
+                nome,
+                celular: PresenteCodigo,
+                presente
+            };
+        }else{
+            json.error = 'Campos não enviados'
+        }
+        res.json(json);
+    },
+
+    excluirPresente: async(req,res) =>{
+        let json = {error:'', result:{}};
+
+        await CasamentoService.excluirPresente(req.params.codigo);
+
+        res.json(json);
+    },
+
+    // Mural
+
+    
+    buscarTodosMural: async (req, res)=> {
+        let json = {error:'',result:[]};
+
+        let mural = await CasamentoService.buscarTodosMural();
+
+        for(let i in mural){
+            json.result.push({
+                codigo: mural[i].codigo,
+                celular:   mural[i].celular,
+                nome:   mural[i].nome,
+                parentesco:   mural[i].parentesco,
+                recado:   mural[i].recado
+            });
+        }
+        res.json(json); 
+    },
+    buscarUmMural: async(req, res) => {
+        let json = {error:'',result:{}};
+
+        let codigo = req.params.codigo;
+        let mural = await casamentoService.buscarUmMural(codigo);
+        
+        if(mural){
+            json.result = mural;
+        }
+        res.json(json);
+    },
+
+    inserirMural: async(req, res) => {
+        let json = {error:'',result:{}};
+
+        let celular = req.body.celular;
+        let nome = req.body.nome;
+        let parentesco = req.body.parentesco;
+        let recado = req.body.recado;
+                
+        if(nome && celular && parentesco && recado){
+            let MuralCodigo = await casamentoService.inserirMural(nome, celular, parentesco, recado);
+            json.result = {
+                codigo: MuralCodigo,
+                nome,
+                celular,
+                parentesco,
+                recado
+            };
+        }else{
+            json.error = 'Campos não enviados'
+        }
+        res.json(json);
+    },
+    alterarMural: async(req, res) => {
+        let json = {error:'',result:{}};
+
+        let codigo = req.params.codigo;
+        let nome = req.body.nome;
+        let celular = req.body.celular;
+        let parentesco = req.body.parentesco;
+        let recado = req.body.recado;
+                
+        if(codigo && nome && celular && parentesco && recado){
+            await casamentoService.alterarMural(codigo, nome, celular, parentesco, recado);
+            json.result = {
+                codigo,
+                nome,
+                celular,
+                parentesco,
+                recado
+            };
+        }else{
+            json.error = 'Campos não enviados'
+        }
+        res.json(json);
+    },
+    excluirMural: async(req,res) =>{
+        let json = {error:'', result:{}};
+
+        await CasamentoService.excluirMural(req.params.codigo);
+
+        res.json(json);
+    },
+
 }
